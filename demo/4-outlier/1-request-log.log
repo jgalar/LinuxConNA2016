@@ -1,3 +1,8 @@
+$ lttng-periodlog --top --freq --stats \
+	--period 'request : $evt.$name == "syscall_exit_accept4" && $evt.procname == "apache2" : $evt.pid == $begin.$evt.pid && $evt.$name == "syscall_entry_close" && $evt.fd == $begin.$evt.ret' \
+	--period-captures 'request : worker_pid = $evt.pid' \
+	/tmp/wp-snapshot
+
 Checking the trace for lost events...
 Timerange: [2016-08-20 20:02:36.526849795, 2016-08-20 20:03:46.302123393]
 Periods duration frequency distribution - Period: request (µs)

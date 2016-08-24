@@ -1,4 +1,7 @@
-$ ./period-analysis.sh ~/lttng-traces/wp/all-kernel-20160810-154702/kernel/
+$ lttng-periodtop \
+	--period 'request : $evt.$name == "syscall_exit_accept4" && $evt.procname == "apache2" : $evt.pid == $begin.$evt.pid && $evt.$name == "syscall_entry_close" && $evt.fd == $begin.$evt.ret' \
+	--period-captures 'request : worker_pid = $evt.pid' \
+	~/lttng-traces/wp/all-kernel-20160810-154702/kernel/
 Checking the trace for lost events...
 Processing the trace: 100% [#################################################################################################################################################################################################################################################################################] Time: 
 5:37:30 

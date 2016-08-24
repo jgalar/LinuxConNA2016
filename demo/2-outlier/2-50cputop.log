@@ -1,3 +1,5 @@
+$ lttng-cputop --limit 50 /tmp/snapshot
+
 Checking the trace for lost events...
 Timerange: [2016-08-22 17:39:43.207432404, 2016-08-22 17:40:03.813405703]
 Per-TID Usage                                                                             Process                   Migrations   Priorities

@@ -1,3 +1,5 @@
+$ lttng-cputop --timerange "[2016-08-22 17:40:02.135282924, 2016-08-22 17:40:03.727306562]" /tmp/snapshot
+
 Checking the trace for lost events...
 Timerange: [2016-08-22 17:40:02.135282924, 2016-08-22 17:40:03.727306562]
 Per-TID Usage                                                                              Process                   Migrations   Priorities

@@ -1,3 +1,5 @@
+$ lttng-schedlog --top --stats --freq ~/lttng-traces/wp/all-kernel-20160810-154702/kernel/
+
 Checking the trace for lost events...
 Timerange: [2016-08-19 00:05:13.152741157, 2016-08-19 00:05:29.324398964]
 

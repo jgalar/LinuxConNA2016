@@ -1,3 +1,8 @@
+$ lttng-periodlog --top --freq --stats \
+	--period 'request : $evt.$name == "syscall_exit_accept4" && $evt.procname == "apache2" : $evt.pid == $begin.$evt.pid && $evt.$name == "syscall_entry_close" && $evt.fd == $begin.$evt.ret' \
+	--period-captures 'request : worker_pid = $evt.pid' \
+	/tmp/snapshot
+
 Checking the trace for lost events...
 Timerange: [2016-08-22 17:39:43.207432404, 2016-08-22 17:40:03.813405703]
 

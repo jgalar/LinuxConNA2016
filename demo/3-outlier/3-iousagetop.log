@@ -1,3 +1,5 @@
+$ lttng-iousagetop --limit 100 /tmp/snapshot
+
 Checking the trace for lost events...
 Timerange: [2016-08-21 21:47:43.023365999, 2016-08-21 21:48:05.196062024]
 Per-process I/O Read                                                                        Process                   Disk       Net        Unknown   

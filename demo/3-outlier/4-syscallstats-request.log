@@ -1,3 +1,5 @@
+$ lttng-syscallstats --timerange "[2016-08-21 21:48:16.779425132, 2016-08-21 21:48:21.969177327]" /tmp/snapshot
+
 Checking the trace for lost events...
 Timerange: [2016-08-21 21:48:16.779425132, 2016-08-21 21:48:21.969177327]
 Per-TID syscalls statistics (usec)

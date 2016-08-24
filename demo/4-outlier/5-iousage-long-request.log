@@ -1,3 +1,5 @@
+$ lttng-iousage --timerange "[2016-08-20 20:03:42.197195165, 2016-08-20 20:03:44.163388223]" /tmp/db-snapshot
+
 Checking the trace for lost events...
 Timerange: [2016-08-20 20:03:42.197195165, 2016-08-20 20:03:44.163388223]
 Per-process I/O Read                                                                        Process                   Disk       Net        Unknown   
