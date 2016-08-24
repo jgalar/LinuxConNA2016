@@ -1,0 +1,414 @@
+Checking the trace for lost events...
+Timerange: [2016-08-21 21:47:43.023365999, 2016-08-21 21:48:05.196062024]
+Per-process I/O Read                                                                        Process                   Disk       Net        Unknown   
+################################################################################
+████████████████████████████████████████████████████████████████████████████████   2.71 MiB landscape-sysin (2447)      2.69 MiB      0   B  22.91 KiB
+███████████████████                                                              687.48 KiB lsb_release (2465)        687.48 KiB      0   B      0   B
+████████                                                                         300.00 KiB apache2 (1113)              9.09 KiB 290.77 KiB    137   B
+████████                                                                         298.60 KiB apache2 (1114)              9.09 KiB 289.37 KiB    137   B
+████                                                                             144.33 KiB sshd (2429)               137.18 KiB   2.40 KiB   4.75 KiB
+█                                                                                 68.01 KiB apache2 (1112)              1.09 KiB  66.78 KiB    137   B
+█                                                                                 67.96 KiB apache2 (1249)              1.09 KiB  66.79 KiB     86   B
+█                                                                                 61.87 KiB lttng-consumerd (2415)         0   B      0   B  61.87 KiB
+█                                                                                 45.82 KiB ssh (2427)                 42.90 KiB   2.93 KiB      0   B
+█                                                                                 43.52 KiB ssh (2428)                 41.02 KiB   2.50 KiB      0   B
+█                                                                                 42.21 KiB apache2 (1115)              1.09 KiB  40.98 KiB    137   B
+█                                                                                 36.00 KiB cgmanager (252)            12.13 KiB      0   B  23.87 KiB
+                                                                                  28.90 KiB sshd (2430)                    0   B   3.09 KiB  25.81 KiB
+                                                                                  27.16 KiB dumpe2fs (2479)            27.16 KiB      0   B      0   B
+                                                                                  23.39 KiB lttng (2501)               23.39 KiB      0   B      0   B
+                                                                                  18.46 KiB lttng-sessiond (2299)       5.57 KiB     20   B  12.88 KiB
+                                                                                  14.24 KiB apt-config (2453)          14.24 KiB      0   B      5   B
+                                                                                  14.24 KiB apt-config (2455)          14.24 KiB      0   B      5   B
+                                                                                  14.24 KiB apt-config (2457)          14.24 KiB      0   B      5   B
+                                                                                  14.24 KiB apt-config (2459)          14.24 KiB      0   B      5   B
+                                                                                   8.43 KiB bash (2426)                 8.43 KiB      0   B      0   B
+                                                                                   6.96 KiB systemd-logind (389)         265   B   6.42 KiB    292   B
+                                                                                   6.91 KiB awk (2478)                  6.11 KiB      0   B    823   B
+                                                                                   6.71 KiB mount (2477)                6.71 KiB      0   B      0   B
+                                                                                   6.41 KiB update-motd-fsc (2471)      4.47 KiB      0   B   1.94 KiB
+                                                                                   6.39 KiB date (2473)                 6.38 KiB      0   B      9   B
+                                                                                   6.38 KiB date (2446)                 6.38 KiB      0   B      0   B
+                                                                                   6.38 KiB date (2475)                 6.38 KiB      0   B      0   B
+                                                                                   6.38 KiB date (2467)                 6.38 KiB      0   B      0   B
+                                                                                   6.38 KiB date (2497)                 6.38 KiB      0   B      0   B
+                                                                                   6.12 KiB awk (2474)                  6.12 KiB      0   B      0   B
+                                                                                   4.29 KiB grep (2495)                 2.44 KiB      0   B   1.85 KiB
+                                                                                   4.29 KiB grep (2482)                 2.44 KiB      0   B   1.85 KiB
+                                                                                   4.29 KiB grep (2486)                 2.44 KiB      0   B   1.85 KiB
+                                                                                   4.29 KiB grep (2490)                 2.44 KiB      0   B   1.85 KiB
+                                                                                   4.19 KiB who (2451)                  4.19 KiB      0   B      0   B
+                                                                                   4.00 KiB dpkg (2456)                 4.00 KiB      0   B      0   B
+                                                                                   4.00 KiB dpkg (2458)                 4.00 KiB      0   B      0   B
+                                                                                   4.00 KiB dpkg (2460)                 4.00 KiB      0   B      0   B
+                                                                                   4.00 KiB dpkg (2454)                 4.00 KiB      0   B      0   B
+                                                                                   3.56 KiB stat (2468)                 3.56 KiB      0   B      0   B
+                                                                                   3.56 KiB stat (2472)                 3.56 KiB      0   B      0   B
+                                                                                   3.41 KiB release-upgrade (2463)      3.38 KiB      0   B     34   B
+                                                                                   3.09 KiB grep (2441)                 3.09 KiB      0   B      0   B
+                                                                                   3.01 KiB update-motd-upd (2452)      2.93 KiB      0   B     85   B
+                                                                                   2.75 KiB sshd (2500)                 1.95 KiB    820   B      0   B
+                                                                                   2.46 KiB grep (2439)                 2.44 KiB      0   B     18   B
+                                                                                   2.45 KiB bc (2444)                   2.44 KiB      0   B     11   B
+                                                                                   2.24 KiB 10-help-text (2437)         2.24 KiB      0   B      0   B
+                                                                                   2.14 KiB 00-header (2433)            2.11 KiB      0   B     35   B
+                                                                                   1.88 KiB update-motd-reb (2499)      1.88 KiB      0   B      0   B
+                                                                                   1.62 KiB run-parts (2432)            1.62 KiB      0   B      0   B
+                                                                                   1.62 KiB find (2461)                 1.62 KiB      0   B      0   B
+                                                                                   1.34 KiB dbus-daemon (350)             21   B      0   B   1.32 KiB
+                                                                                   1.20 KiB 50-landscape-sy (2440)      1.20 KiB      0   B      4   B
+                                                                                   1.19 KiB ldconfig.real (2449)        1.19 KiB      0   B      0   B
+                                                                                    912   B cat (2470)                   912   B      0   B      0   B
+                                                                                    893   B cat (2462)                   893   B      0   B      0   B
+                                                                                    869   B cut (2491)                   832   B      0   B     37   B
+                                                                                    861   B cut (2483)                   832   B      0   B     29   B
+                                                                                    861   B cut (2487)                   832   B      0   B     29   B
+                                                                                    858   B cut (2445)                   858   B      0   B      0   B
+                                                                                    854   B cut (2492)                   832   B      0   B     22   B
+                                                                                    851   B cut (2466)                   832   B      0   B     19   B
+                                                                                    832   B uname (2435)                 832   B      0   B      0   B
+                                                                                    832   B sh (2431)                    832   B      0   B      0   B
+                                                                                    832   B uname (2434)                 832   B      0   B      0   B
+                                                                                    832   B uname (2436)                 832   B      0   B      0   B
+                                                                                    832   B uname (2438)                 832   B      0   B      0   B
+                                                                                    832   B sh (2448)                    832   B      0   B      0   B
+                                                                                    832   B expr (2469)                  832   B      0   B      0   B
+                                                                                    832   B cat (2498)                   832   B      0   B      0   B
+                                                                                    832   B cut (2496)                   832   B      0   B      0   B
+                                                                                    355   B tmux (1228)                  300   B      0   B     55   B
+                                                                                    240   B in:imuxsock (414)              0   B      0   B    240   B
+                                                                                    208   B sshd (1211)                    0   B      0   B    208   B
+                                                                                    127   B init (1)                       0   B      0   B    127   B
+                                                                                      5   B 50-landscape-sy (2443)         0   B      0   B      5   B
+                                                                                      0   B jbd2/vda1-8 (129)              0   B      0   B      0   B
+                                                                                      0   B dnsmasq (1055)                 0   B      0   B      0   B
+                                                                                      0   B lttng-sessiond (2299)          0   B      0   B      0   B
+                                                                                      0   B upstart-udev-br (292)          0   B      0   B      0   B
+                                                                                      0   B lttng-consumerd (2415)         0   B      0   B      0   B
+                                                                                      0   B systemd-udevd (296)            0   B      0   B      0   B
+                                                                                      0   B kworker/u2:3 (51)              0   B      0   B      0   B
+                                                                                      0   B lttng-sessiond (2299)          0   B      0   B      0   B
+                                                                                      0   B update-motd-fsc (2484)         0   B      0   B      0   B
+                                                                                      0   B update-motd-fsc (2485)         0   B      0   B      0   B
+                                                                                      0   B update-motd-fsc (2488)         0   B      0   B      0   B
+                                                                                      0   B apache2 (1107)                 0   B      0   B      0   B
+                                                                                      0   B upstart-socket- (852)          0   B      0   B      0   B
+                                                                                      0   B apache2 (1111)                 0   B      0   B      0   B
+                                                                                      0   B lttng-sessiond (2299)          0   B      0   B      0   B
+                                                                                      0   B lttng-sessiond (2299)          0   B      0   B      0   B
+                                                                                      0   B lttng-sessiond (2299)          0   B      0   B      0   B
+                                                                                      0   B lttng-sessiond (2299)          0   B      0   B      0   B
+                                                                                      0   B lttng-sessiond (2299)          0   B      0   B      0   B
+                                                                                      0   B update-motd-fsc (2493)         0   B      0   B      0   B
+                                                                                      0   B lttng-consumerd (2415)         0   B      0   B      0   B
+                                                                                      0   B lttng-sessiond (2299)          0   B      0   B      0   B
+
+Per-process I/O Write                                                                      Process                   Disk       Net        Unknown   
+################################################################################
+████████████████████████████████████████████████████████████████████████████████ 62.25 KiB lttng-sessiond (2299)          0   B    383   B  61.88 KiB
+██████████████████████████████████████████████████████                           42.58 KiB apache2 (1113)                 0   B   3.81 KiB  38.76 KiB
+██████████████████████████████████████████████████████                           42.55 KiB apache2 (1114)                 0   B   3.79 KiB  38.76 KiB
+██████████████████████████████████                                               26.97 KiB sshd (2429)                    6   B   1.12 KiB  25.85 KiB
+████████████████████████████████                                                 25.25 KiB systemd-logind (389)         646   B  23.68 KiB    957   B
+█████████████████████████████                                                    22.89 KiB ldconfig.real (2449)           0   B      0   B  22.89 KiB
+████████████████                                                                 12.85 KiB lttng (2501)                   0   B  12.85 KiB      0   B
+████████                                                                          6.72 KiB cgmanager (252)               50   B      0   B   6.67 KiB
+████████                                                                          6.27 KiB sshd (2430)                    0   B   2.34 KiB   3.93 KiB
+█████                                                                             4.35 KiB lttng-consumerd (2415)         0   B      0   B   4.35 KiB
+████                                                                              3.46 KiB ssh (2427)                     0   B   3.46 KiB      0   B
+████                                                                              3.44 KiB ssh (2428)                     0   B   3.44 KiB      0   B
+██                                                                                1.98 KiB apache2 (1112)                 0   B   1.51 KiB    474   B
+██                                                                                1.94 KiB apache2 (1249)                 0   B   1.51 KiB    435   B
+██                                                                                1.88 KiB dumpe2fs (2479)               29   B      0   B   1.85 KiB
+██                                                                                1.85 KiB update-motd-fsc (2485)         0   B      0   B   1.85 KiB
+██                                                                                1.85 KiB update-motd-fsc (2481)         0   B      0   B   1.85 KiB
+██                                                                                1.85 KiB update-motd-fsc (2489)         0   B      0   B   1.85 KiB
+██                                                                                1.85 KiB update-motd-fsc (2494)         0   B      0   B   1.85 KiB
+█                                                                                 1.11 KiB apache2 (1115)                 0   B   1.11 KiB      0   B
+█                                                                                  823   B mount (2477)                   0   B      0   B    823   B
+                                                                                   772   B dbus-daemon (350)              0   B      0   B    772   B
+                                                                                   747   B sshd (952)                     0   B      0   B    747   B
+                                                                                   341   B landscape-sysin (2447)       338   B      0   B      3   B
+                                                                                   319   B sshd (2500)                    0   B    268   B     51   B
+                                                                                   280   B sshd (1211)                    0   B      0   B    280   B
+                                                                                   240   B rs:main Q:Reg (414)            0   B      0   B    240   B
+                                                                                   208   B tmux (1228)                    0   B      0   B    208   B
+                                                                                   127   B init (1)                       0   B      0   B    127   B
+                                                                                    80   B cat (2470)                    80   B      0   B      0   B
+                                                                                    67   B 00-header (2433)              67   B      0   B      0   B
+                                                                                    61   B cat (2462)                    61   B      0   B      0   B
+                                                                                    45   B 10-help-text (2437)           45   B      0   B      0   B
+                                                                                    39   B lttng (2424)                   0   B      0   B     39   B
+                                                                                    37   B grep (2490)                    0   B      0   B     37   B
+                                                                                    29   B 50-landscape-sy (2440)        29   B      0   B      0   B
+                                                                                    29   B date (2446)                   29   B      0   B      0   B
+                                                                                    29   B grep (2482)                    0   B      0   B     29   B
+                                                                                    29   B grep (2486)                    0   B      0   B     29   B
+                                                                                    26   B apt-config (2459)              0   B      0   B     26   B
+                                                                                    24   B apt-config (2453)              0   B     24   B      0   B
+                                                                                    22   B cut (2491)                     0   B      0   B     22   B
+                                                                                    19   B who (2451)                     0   B      0   B     19   B
+                                                                                    19   B lsb_release (2465)             0   B      0   B     19   B
+                                                                                    18   B uname (2435)                   0   B      0   B     18   B
+                                                                                    18   B uname (2438)                   0   B     18   B      0   B
+                                                                                    18   B apt-config (2457)              0   B      0   B     18   B
+                                                                                    17   B cut (2483)                     0   B      0   B     17   B
+                                                                                    17   B apt-config (2455)              0   B      0   B     17   B
+                                                                                    15   B bash (1229)                    0   B      0   B     15   B
+                                                                                    14   B cut (2492)                     0   B      0   B     14   B
+                                                                                    11   B 50-landscape-sy (2443)         0   B      0   B     11   B
+                                                                                    11   B stat (2468)                    0   B      0   B     11   B
+                                                                                    11   B expr (2469)                    0   B      0   B     11   B
+                                                                                    11   B stat (2472)                    0   B     11   B      0   B
+                                                                                    11   B date (2475)                    0   B      0   B     11   B
+                                                                                    11   B date (2467)                    0   B      0   B     11   B
+                                                                                    11   B date (2497)                    0   B      0   B     11   B
+                                                                                    11   B date (2473)                    0   B      0   B     11   B
+                                                                                    10   B uname (2434)                   0   B     10   B      0   B
+                                                                                    10   B awk (2478)                     0   B      0   B     10   B
+                                                                                     9   B awk (2474)                     0   B      0   B      9   B
+                                                                                     9   B cut (2487)                     0   B      0   B      9   B
+                                                                                     7   B uname (2436)                   0   B      0   B      7   B
+                                                                                     5   B cut (2445)                     0   B      0   B      5   B
+                                                                                     5   B dpkg (2456)                    0   B      0   B      5   B
+                                                                                     5   B dpkg (2458)                    0   B      0   B      5   B
+                                                                                     5   B dpkg (2460)                    0   B      0   B      5   B
+                                                                                     5   B dpkg (2454)                    0   B      0   B      5   B
+                                                                                     2   B grep (2441)                    0   B      2   B      0   B
+                                                                                     2   B bc (2444)                      0   B      0   B      2   B
+                                                                                     1   B cut (2466)                     0   B      1   B      0   B
+                                                                                     1   B release-upgrade (2463)         1   B      0   B      0   B
+                                                                                     0   B jbd2/vda1-8 (129)              0   B      0   B      0   B
+                                                                                     0   B dnsmasq (1055)                 0   B      0   B      0   B
+                                                                                     0   B lttng-sessiond (2299)          0   B      0   B      0   B
+                                                                                     0   B upstart-udev-br (292)          0   B      0   B      0   B
+                                                                                     0   B lttng-consumerd (2415)         0   B      0   B      0   B
+                                                                                     0   B systemd-udevd (296)            0   B      0   B      0   B
+                                                                                     0   B kworker/u2:3 (51)              0   B      0   B      0   B
+                                                                                     0   B lttng-sessiond (2299)          0   B      0   B      0   B
+                                                                                     0   B update-motd-fsc (2484)         0   B      0   B      0   B
+                                                                                     0   B update-motd-fsc (2488)         0   B      0   B      0   B
+                                                                                     0   B run-parts (2432)               0   B      0   B      0   B
+                                                                                     0   B apache2 (1107)                 0   B      0   B      0   B
+                                                                                     0   B upstart-socket- (852)          0   B      0   B      0   B
+                                                                                     0   B apache2 (1111)                 0   B      0   B      0   B
+                                                                                     0   B lttng-sessiond (2299)          0   B      0   B      0   B
+                                                                                     0   B lttng-sessiond (2299)          0   B      0   B      0   B
+                                                                                     0   B lttng-sessiond (2299)          0   B      0   B      0   B
+                                                                                     0   B lttng-sessiond (2299)          0   B      0   B      0   B
+                                                                                     0   B lttng-sessiond (2299)          0   B      0   B      0   B
+                                                                                     0   B update-motd-fsc (2493)         0   B      0   B      0   B
+                                                                                     0   B grep (2495)                    0   B      0   B      0   B
+                                                                                     0   B lttng-consumerd (2415)         0   B      0   B      0   B
+                                                                                     0   B lttng-sessiond (2299)          0   B      0   B      0   B
+                                                                                     0   B lttng-runas (2417)             0   B      0   B      0   B
+                                                                                     0   B lttng-consumerd (2415)         0   B      0   B      0   B
+                                                                                     0   B kworker/u3:0 (19)              0   B      0   B      0   B
+                                                                                     0   B lttng-consumerd (2415)         0   B      0   B      0   B
+
+Per-file I/O Read                                                                           Path
+################################################################################
+████████████████████████████████████████████████████████████████████████████████ 754.17 KiB 172.18.0.223:3306
+█████████████████                                                                166.80 KiB /usr/lib/python2.7/decimal.pyc
+███████████                                                                      108.62 KiB /usr/lib/python2.7/dist-packages/twisted/internet/interfaces.pyc
+███████████                                                                      103.92 KiB /usr/lib/python2.7/dist-packages/pkg_resources.pyc
+██████████                                                                       100.15 KiB /usr/lib/python2.7/dist-packages/twisted/protocols/amp.pyc
+██████                                                                            64.40 KiB /usr/lib/python2.7/dist-packages/configobj.pyc
+██████                                                                            61.86 KiB socket:[17000] (lttng-consumerd)
+█████                                                                             55.90 KiB /usr/lib/python2.7/logging/__init__.pyc
+█████                                                                             55.68 KiB /etc/localtime
+█████                                                                             55.25 KiB /lib/x86_64-linux-gnu/libc.so.6
+█████                                                                             54.57 KiB /usr/lib/python2.7/dist-packages/zope/interface/interfaces.pyc
+█████                                                                             53.79 KiB /usr/lib/python2.7/dist-packages/twisted/python/filepath.pyc
+█████                                                                             53.74 KiB /usr/lib/python2.7/dist-packages/twisted/internet/defer.pyc
+█████                                                                             52.58 KiB /usr/lib/python2.7/optparse.pyc
+█████                                                                             50.31 KiB /usr/lib/python3.4/__pycache__/optparse.cpython-34.pyc
+█████                                                                             49.70 KiB /usr/lib/python2.7/locale.pyc
+████                                                                              44.37 KiB /usr/lib/python3.4/collections/__pycache__/__init__.cpython-34.pyc
+████                                                                              42.85 KiB /usr/lib/python2.7/dist-packages/twisted/internet/base.pyc
+████                                                                              42.39 KiB /usr/lib/python3.4/__pycache__/subprocess.cpython-34.pyc
+████                                                                              41.43 KiB /usr/lib/python2.7/threading.pyc
+████                                                                              40.38 KiB /usr/lib/python2.7/zipfile.pyc
+████                                                                              40.11 KiB /usr/lib/python2.7/dist-packages/twisted/internet/tcp.pyc
+████                                                                              39.08 KiB /usr/lib/python2.7/dist-packages/twisted/python/util.pyc
+████                                                                              38.92 KiB /usr/lib/python2.7/inspect.pyc
+████                                                                              38.18 KiB /usr/lib/python2.7/logging/handlers.pyc
+████                                                                              38.12 KiB /usr/lib/python3.4/__pycache__/threading.cpython-34.pyc
+███                                                                               37.36 KiB /usr/lib/python2.7/pickle.pyc
+███                                                                               36.81 KiB /usr/lib/python2.7/platform.pyc
+███                                                                               36.38 KiB /usr/lib/python3.4/__pycache__/locale.cpython-34.pyc
+███                                                                               35.54 KiB /usr/lib/python2.7/codecs.pyc
+███                                                                               34.30 KiB /usr/lib/python3.4/__pycache__/codecs.cpython-34.pyc
+███                                                                               33.96 KiB unknown (sshd)
+███                                                                               33.89 KiB /usr/lib/python2.7/dist-packages/twisted/internet/protocol.pyc
+███                                                                               33.72 KiB /usr/lib/python2.7/dist-packages/twisted/protocols/basic.pyc
+███                                                                               33.31 KiB /usr/lib/python2.7/dist-packages/twisted/internet/process.pyc
+███                                                                               33.31 KiB /usr/lib/python2.7/dist-packages/twisted/internet/task.pyc
+███                                                                               31.74 KiB /usr/lib/ssl/openssl.cnf
+███                                                                               29.55 KiB /usr/lib/python2.7/dist-packages/twisted/internet/_sslverify.pyc
+███                                                                               28.95 KiB /usr/lib/python3.4/__pycache__/os.cpython-34.pyc
+███                                                                               28.67 KiB /usr/lib/python2.7/dist-packages/twisted/protocols/policies.pyc
+██                                                                                26.30 KiB /etc/login.defs
+██                                                                                24.85 KiB /usr/lib/python2.7/os.pyc
+██                                                                                24.83 KiB /usr/lib/python2.7/random.pyc
+██                                                                                24.24 KiB /usr/lib/python2.7/dist-packages/zope/interface/declarations.pyc
+██                                                                                24.21 KiB /usr/lib/python2.7/_abcoll.pyc
+██                                                                                24.01 KiB /usr/lib/python2.7/collections.pyc
+██                                                                                23.68 KiB unknown (cgmanager)
+██                                                                                23.37 KiB /usr/lib/python3.4/__pycache__/_collections_abc.cpython-34.pyc
+██                                                                                23.24 KiB /usr/lib/python2.7/dist-packages/landscape/lib/amp.pyc
+██                                                                                23.04 KiB /usr/lib/python3.4/__pycache__/functools.cpython-34.pyc
+██                                                                                22.91 KiB unknown (landscape-sysin)
+██                                                                                22.38 KiB /usr/lib/python2.7/dist-packages/zope/interface/interface.pyc
+██                                                                                22.14 KiB /usr/lib/python2.7/dist-packages/twisted/python/log.pyc
+██                                                                                21.94 KiB /lib/x86_64-linux-gnu/libdl.so.2
+██                                                                                21.86 KiB /usr/lib/python2.7/dist-packages/landscape/lib/persist.pyc
+██                                                                                20.91 KiB /usr/lib/python2.7/uuid.pyc
+██                                                                                20.84 KiB /usr/lib/python2.7/dist-packages/twisted/internet/posixbase.pyc
+██                                                                                20.44 KiB /usr/lib/python3.4/plat-x86_64-linux-gnu/__pycache__/_sysconfigdata_m.cpython-34.pyc
+██                                                                                20.36 KiB /usr/lib/python2.7/dist-packages/twisted/protocols/tls.pyc
+██                                                                                19.72 KiB /usr/lib/python2.7/ctypes/__init__.pyc
+██                                                                                19.65 KiB /usr/lib/python2.7/dist-packages/twisted/python/failure.pyc
+██                                                                                19.47 KiB /usr/lib/python2.7/plat-x86_64-linux-gnu/_sysconfigdata_nd.pyc
+██                                                                                19.44 KiB /usr/lib/python2.7/string.pyc
+██                                                                                19.42 KiB /usr/lib/python3.4/__pycache__/weakref.cpython-34.pyc
+██                                                                                19.35 KiB /usr/lib/python3.4/__pycache__/sre_parse.cpython-34.pyc
+██                                                                                19.30 KiB /usr/lib/python2.7/tempfile.pyc
+██                                                                                19.26 KiB /usr/lib/python2.7/site.pyc
+██                                                                                19.13 KiB /usr/lib/python3.4/__pycache__/tokenize.cpython-34.pyc
+██                                                                                19.06 KiB /usr/lib/python2.7/dist-packages/twisted/internet/abstract.pyc
+██                                                                                18.88 KiB /usr/lib/python2.7/dist-packages/twisted/internet/error.pyc
+██                                                                                18.87 KiB /usr/lib/python2.7/sre_parse.pyc
+█                                                                                 18.78 KiB /usr/lib/python2.7/dist-packages/zope/interface/adapter.pyc
+█                                                                                 18.42 KiB /usr/lib/python2.7/pkgutil.pyc
+█                                                                                 18.17 KiB /usr/lib/python2.7/sysconfig.pyc
+█                                                                                 18.16 KiB /usr/lib/python3.4/__pycache__/site.cpython-34.pyc
+█                                                                                 17.90 KiB /usr/lib/python2.7/shutil.pyc
+█                                                                                 17.89 KiB /usr/lib/python2.7/dist-packages/twisted/python/deprecate.pyc
+█                                                                                 17.02 KiB /usr/lib/python2.7/dist-packages/twisted/python/components.pyc
+█                                                                                 17.00 KiB /usr/lib/python3.4/__pycache__/sysconfig.cpython-34.pyc
+█                                                                                 16.48 KiB /usr/lib/python2.7/dist-packages/twisted/internet/udp.pyc
+█                                                                                 16.35 KiB 
+█                                                                                 16.19 KiB /usr/lib/python3.4/__pycache__/selectors.cpython-34.pyc
+█                                                                                 16.03 KiB /usr/lib/python2.7/dist-packages/landscape/deployment.pyc
+█                                                                                 16.00 KiB /usr/share/wordpress/wp-content/themes/twentyfourteen/style.css
+█                                                                                 15.67 KiB /usr/lib/python2.7/socket.pyc
+█                                                                                 15.19 KiB /usr/lib/python2.7/gettext.pyc
+█                                                                                 14.90 KiB /usr/lib/python2.7/weakref.pyc
+█                                                                                 14.19 KiB /usr/lib/python3.4/__pycache__/re.cpython-34.pyc
+█                                                                                 14.19 KiB /usr/lib/python2.7/heapq.pyc
+█                                                                                 14.12 KiB /usr/lib/python2.7/urlparse.pyc
+█                                                                                 13.86 KiB /usr/lib/python2.7/tokenize.pyc
+█                                                                                 13.57 KiB /usr/lib/python3.4/__pycache__/heapq.cpython-34.pyc
+█                                                                                 13.56 KiB /usr/lib/python2.7/numbers.pyc
+█                                                                                 13.33 KiB /usr/lib/python3.4/__pycache__/textwrap.cpython-34.pyc
+█                                                                                 13.09 KiB /var/www/.ssh/id_rsa
+█                                                                                 13.00 KiB /usr/lib/python2.7/dist-packages/twisted/python/_reflectpy3.pyc
+█                                                                                 13.00 KiB /dev/vda1
+█                                                                                 13.00 KiB /lib/x86_64-linux-gnu/libpcre.so.3
+█                                                                                 12.94 KiB /usr/lib/python2.7/dist-packages/twisted/internet/epollreactor.pyc
+█                                                                                 12.85 KiB unknown (lttng-sessiond)
+
+Per-file I/O Write                                                                         Path
+################################################################################
+████████████████████████████████████████████████████████████████████████████████ 77.86 KiB unknown (apache2)
+███████████████████████████████████████████████████████████████                  61.86 KiB socket:[16998] (lttng-sessiond)
+█████████████████████████████████                                                33.02 KiB unknown (sshd)
+████████████████████████                                                         23.68 KiB socket (systemd-logind)
+███████████████████████                                                          22.89 KiB unknown (ldconfig.real)
+█████████████                                                                    12.85 KiB socket (lttng)
+███████████                                                                      11.65 KiB 172.18.0.223:3306
+███████                                                                           7.40 KiB unknown (update-motd-fsc)
+██████                                                                            6.42 KiB unknown (cgmanager)
+████                                                                              4.32 KiB unknown (lttng-consumerd)
+███                                                                               3.46 KiB socket (ssh)
+███                                                                               3.44 KiB 172.18.0.223:22
+█                                                                                 1.85 KiB unknown (dumpe2fs)
+█                                                                                 1.26 KiB socket (sshd)
+                                                                                   906   B socket:[7882] (systemd-logind)
+                                                                                   823   B unknown (mount)
+                                                                                   650   B /run/motd.dynamic.new
+                                                                                   569   B /var/log/apache2/access.log
+                                                                                   480   B unknown (dbus-daemon)
+                                                                                   383   B socket (lttng-sessiond)
+                                                                                   292   B socket:[7883] (dbus-daemon)
+                                                                                   280   B socket:[9940] (sshd)
+                                                                                   250   B /run/systemd/sessions/.9ec5kkR
+                                                                                   240   B /var/log/auth.log
+                                                                                   208   B /dev/pts/0
+                                                                                   199   B /run/systemd/users/.10004PyciA
+                                                                                   197   B /run/systemd/users/.1000Qtuum8
+                                                                                   191   B pipe:[7469] (cgmanager)
+                                                                                    95   B unknown (grep)
+                                                                                    73   B /var/log/upstart/cgmanager.log
+                                                                                    72   B /dev/pts/1
+                                                                                    67   B unknown (cut)
+                                                                                    61   B unknown (apt-config)
+                                                                                    54   B /dev/pts/3
+                                                                                    53   B /var/log/upstart/systemd-logind.log
+                                                                                    51   B /dev/pts/2
+                                                                                    44   B unknown (date)
+                                                                                    29   B 8.8.6.6:53
+                                                                                    29   B 8.8.4.4:53
+                                                                                    29   B /dev/null
+                                                                                    29   B 208.67.220.220:53
+                                                                                    28   B socket:[17000] (lttng-consumerd)
+                                                                                    28   B socket (uname)
+                                                                                    25   B unknown (uname)
+                                                                                    24   B socket (apt-config)
+                                                                                    20   B socket:[17235] (lttng-sessiond)
+                                                                                    20   B unknown (dpkg)
+                                                                                    19   B unknown (awk)
+                                                                                    19   B unknown (lsb_release)
+                                                                                    19   B unknown (who)
+                                                                                    11   B unknown (50-landscape-sy)
+                                                                                    11   B unknown (stat)
+                                                                                    11   B socket (stat)
+                                                                                    11   B unknown (expr)
+                                                                                     5   B /run/cgmanager/fs/cpuacct/user/1000.user/9.session/tasks
+                                                                                     5   B /run/cgmanager/fs/cpuset/user/1000.user/9.session/tasks
+                                                                                     5   B /run/cgmanager/fs/freezer/user/1000.user/9.session/tasks
+                                                                                     5   B /run/cgmanager/fs/blkio/user/1000.user/9.session/tasks
+                                                                                     5   B /run/cgmanager/fs/devices/user/1000.user/9.session/tasks
+                                                                                     5   B /run/cgmanager/fs/cpu/user/1000.user/9.session/tasks
+                                                                                     5   B /run/cgmanager/fs/hugetlb/user/1000.user/9.session/tasks
+                                                                                     5   B /run/cgmanager/fs/none,name=systemd/user/1000.user/9.session/tasks
+                                                                                     5   B /run/cgmanager/fs/perf_event/user/1000.user/9.session/tasks
+                                                                                     5   B /run/cgmanager/fs/memory/user/1000.user/9.session/tasks
+                                                                                     4   B /proc/self/loginuid
+                                                                                     3   B unknown (landscape-sysin)
+                                                                                     2   B 
+                                                                                     2   B unknown (bc)
+                                                                                     2   B socket (grep)
+                                                                                     1   B socket (cut)
+                                                                                     1   B pipe:[7010] (init)
+
+Block I/O Write                                                                            Process
+################################################################################
+████████████████████████████████████████████████████████████████████████████████ 36.00 KiB jbd2/vda1-8 (pid=129)
+███████████████████████████████████                                              16.00 KiB kworker/u2:3 (pid=51)
+████████                                                                          4.00 KiB kworker/u3:0 (pid=19)
+████████                                                                          4.00 KiB kworker/u3:2 (pid=128)
+
+Disk Requests Sector Count                                                                   Disk
+################################################################################
+████████████████████████████████████████████████████████████████████████████████ 120 sectors vda1
+
+Disk Request Count                                                                          Disk
+################################################################################
+████████████████████████████████████████████████████████████████████████████████ 8 requests vda1
+
+Disk Request Average Latency                                                             Disk
+################################################################################
+███████████████████████████████████████████████████████████████████████████████  0.24 ms vda1
+
+Network Received Bytes                                                                 Interface
+################################################################################
+                                                                                 0   B lo
+                                                                                 0   B eth0
+
+Network Sent Bytes                                                                          Interface
+################################################################################
+████████████████████████████████████████████████████████████████████████████████ 117.50 KiB eth0
+█████                                                                              8.55 KiB lo
+

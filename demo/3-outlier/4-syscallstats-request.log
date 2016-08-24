@@ -1,0 +1,1323 @@
+Checking the trace for lost events...
+Timerange: [2016-08-21 21:48:16.779425132, 2016-08-21 21:48:21.969177327]
+Per-TID syscalls statistics (usec)
+50-landscape-sy (2581, TID: 2581)               Count            Min        Average          Max      Stdev  Return values 
+ - newfstat                                      2883          0.516          0.701        3.272      0.223  {'success': 2884}
+ - open                                          2748          1.197          4.207     4022.135     77.436  {'ENOENT': 1966, 'success': 784}
+ - lseek                                         1636          0.623          0.726        1.659      0.102  {'ESPIPE': 55, 'success': 1583}
+ - read                                          1269          0.547           5.71     1613.633     45.813  {'success': 1270}
+ - close                                          814          0.558          1.038        4.029      0.438  {'success': 815}
+ - mmap                                           696          1.018          2.329        6.164      0.876  {'success': 697}
+ - newstat                                        658          0.836          2.045         9.86      0.939  {'ENOENT': 494, 'success': 166}
+ - munmap                                         607          1.273          3.127       38.194      2.191  {'success': 608}
+ - rt_sigaction                                    75           0.73          7.938      529.232     61.008  {'success': 76}
+ - newlstat                                        73           0.93          1.573         5.35      0.801  {'ENOENT': 2, 'success': 73}
+ - mprotect                                        50          2.145          7.127      142.664     19.592  {'success': 51}
+ - getdents                                        36          0.726         41.622      375.991      89.98  {'success': 37}
+ - brk                                             34          1.473          2.691        4.894      0.952  {'success': 35}
+ - access                                          30           1.45          3.132       15.423      2.428  {'ENOENT': 17, 'success': 15}
+ - fcntl                                           25          0.672          1.036        2.345      0.438  {'success': 26}
+ - ioctl                                           18          0.754          2.493        10.27      2.248  {'ENOTSUP': 3, 'ENOTTY': 6, 'success': 12}
+ - openat                                          17          2.253          3.322        5.526      0.877  {'success': 18}
+ - epoll_ctl                                        8          1.639          2.661        3.967      0.828  {'success': 9}
+ - epoll_wait                                       8           1.94        258.287     1956.939    686.483  {'EINTR': 2, 'success': 8}
+ - wait4                                            6          1.816        128.207      735.792    297.696  {'success': 7}
+ - pipe                                             6           4.67          5.889         7.07      0.859  {'success': 7}
+ - getuid                                           5          0.615          1.222         1.51       0.37  {'success': 6}
+ - readlink                                         4          1.481          2.742        4.568      1.318  {'EINVAL': 3, 'success': 3}
+ - write                                            4            2.9          4.476        7.482      2.071  {'success': 5}
+ - clone                                            3        116.604        176.066      246.709     65.769  {'success': 4}
+ - socket                                           3          1.858          6.413       10.995      4.569  {'success': 4}
+ - statfs                                           3          2.145          3.644        4.527      1.305  {'ENOENT': 2, 'success': 3}
+ - newuname                                         2          1.832          2.071        2.311          ?  {'success': 3}
+ - futex                                            2           2.05          2.619        3.187          ?  {'EAGAIN': 2, 'success': 2}
+ - connect                                          2          2.945          7.042       11.138          ?  {'ENOENT': 3} 
+ - getcwd                                           2           1.83          2.049        2.268          ?  {'success': 3}
+ - execve                                           1          85.55          85.55        85.55          ?  {'success': 2}
+ - geteuid                                          1           1.86           1.86         1.86          ?  {'success': 2}
+ - rt_sigprocmask                                   1            1.3            1.3          1.3          ?  {'success': 2}
+ - unknown                                          1          1.115          1.115        1.115          ?  {'success': 2}
+ - select                                           1          3.052          3.052        3.052          ?  {'success': 2}
+ - set_robust_list                                  1          1.439          1.439        1.439          ?  {'success': 2}
+ - getegid                                          1          1.265          1.265        1.265          ?  {'success': 2}
+ - set_tid_address                                  1          1.387          1.387        1.387          ?  {'success': 2}
+ - getgid                                           1          0.955          0.955        0.955          ?  {'success': 2}
+ - epoll_create                                     1          5.134          5.134        5.134          ?  {'success': 2}
+ - getrlimit                                        1          1.587          1.587        1.587          ?  {'success': 2}
+ - pipe2                                            1           5.98           5.98         5.98          ?  {'success': 2}
+ - poll                                             1          2.076          2.076        2.076          ?  {'success': 2}
+Total:                                          11740                                                                      
+-----------------------------------------------------------------------------------------------------------------
+apt-config (2588, TID: 2588)                    Count            Min        Average          Max      Stdev  Return values 
+ - getrlimit                                     1022          0.574          0.598        1.837      0.056  {'success': 1023}
+ - fcntl                                         1021          0.611          0.639        1.067      0.047  {'success': 4, 'EBADF': 1019}
+ - mmap                                            19          1.268          2.594        5.118      0.863  {'success': 20}
+ - read                                            10          0.803          6.422       39.828     12.276  {'success': 11}
+ - close                                           10          0.883          1.083        1.275       0.15  {'success': 11}
+ - mprotect                                        10          1.953          3.403        5.125      1.112  {'success': 11}
+ - newfstat                                         9           0.81           1.08        1.457      0.213  {'success': 10}
+ - open                                             9            2.8          4.225        7.417      1.615  {'success': 10}
+ - access                                           6          1.352          2.422        3.355       0.77  {'ENOENT': 7} 
+ - rt_sigaction                                     6          0.812          0.976        1.625       0.32  {'success': 7}
+ - munmap                                           4          2.595          4.134        4.881      1.039  {'success': 5}
+ - dup2                                             3           0.62          0.856        1.137      0.262  {'success': 4}
+ - brk                                              3          0.945          1.285        1.605       0.33  {'success': 4}
+ - getdents                                         2          0.895          3.342         5.79          ?  {'success': 3}
+ - statfs                                           2          1.632          6.067       10.503          ?  {'ENOENT': 3} 
+ - execve                                           1         94.036         94.036       94.036          ?  {'success': 2}
+ - umask                                            1          1.886          1.886        1.886          ?  {'success': 2}
+ - unknown                                          1          1.131          1.131        1.131          ?  {'success': 2}
+ - write                                            1          27.02          27.02        27.02          ?  {'success': 2}
+ - openat                                           1          5.083          5.083        5.083          ?  {'success': 2}
+ - ioctl                                            1          1.392          1.392        1.392          ?  {'ENOTTY': 2} 
+Total:                                           2142                                                                      
+-----------------------------------------------------------------------------------------------------------------
+apt-config (2590, TID: 2590)                    Count            Min        Average          Max      Stdev  Return values 
+ - getrlimit                                     1022          0.575          0.601        1.133       0.05  {'success': 1023}
+ - fcntl                                         1021           0.61          0.651        9.663      0.287  {'success': 4, 'EBADF': 1019}
+ - mmap                                            19          1.246          2.363        4.133      0.624  {'success': 20}
+ - read                                            10          0.839          2.216        8.912      2.471  {'success': 11}
+ - close                                           10          0.765          1.084         1.39      0.216  {'success': 11}
+ - mprotect                                        10          1.809          3.541        5.177       1.27  {'success': 11}
+ - newfstat                                         9           0.89           1.03        1.363      0.173  {'success': 10}
+ - open                                             9           2.12           3.77         7.34      1.796  {'success': 10}
+ - access                                           6          1.328          2.541        3.857        0.9  {'ENOENT': 7} 
+ - rt_sigaction                                     6          0.806          1.052        1.815      0.386  {'success': 7}
+ - munmap                                           4          2.604          3.984        4.867       0.98  {'success': 5}
+ - dup2                                             3            0.6          0.784        1.055       0.24  {'success': 4}
+ - brk                                              3          0.995          1.491        2.122      0.576  {'success': 4}
+ - getdents                                         2          0.897          2.796        4.695          ?  {'success': 3}
+ - statfs                                           2          1.109          3.523        5.937          ?  {'ENOENT': 3} 
+ - execve                                           1         90.405         90.405       90.405          ?  {'success': 2}
+ - umask                                            1           1.42           1.42         1.42          ?  {'success': 2}
+ - unknown                                          1          1.162          1.162        1.162          ?  {'success': 2}
+ - write                                            1         28.059         28.059       28.059          ?  {'success': 2}
+ - openat                                           1          4.231          4.231        4.231          ?  {'success': 2}
+ - ioctl                                            1          1.372          1.372        1.372          ?  {'ENOTTY': 2} 
+Total:                                           2142                                                                      
+-----------------------------------------------------------------------------------------------------------------
+apt-config (2592, TID: 2592)                    Count            Min        Average          Max      Stdev  Return values 
+ - getrlimit                                     1022          0.575          0.605        1.075      0.047  {'success': 1023}
+ - fcntl                                         1021          0.611           0.68       35.659      1.097  {'success': 4, 'EBADF': 1019}
+ - mmap                                            19           1.32           2.34         4.33      0.696  {'success': 20}
+ - read                                            10          0.726           2.24        9.093      2.534  {'success': 11}
+ - close                                           10           0.67          1.006        1.249      0.213  {'success': 11}
+ - mprotect                                        10           1.75            3.3         4.61      1.086  {'success': 11}
+ - newfstat                                         9          0.807          1.055        1.357      0.174  {'success': 10}
+ - open                                             9          2.027          3.604        6.677      1.728  {'success': 10}
+ - access                                           6          1.674          2.503        3.413       0.71  {'ENOENT': 7} 
+ - rt_sigaction                                     6          0.837          1.012        1.745      0.361  {'success': 7}
+ - munmap                                           4          2.328          3.777        4.497       1.01  {'success': 5}
+ - dup2                                             3            0.6          0.787        1.047      0.232  {'success': 4}
+ - brk                                              3          0.906          1.321         1.66      0.383  {'success': 4}
+ - getdents                                         2          0.833          2.671         4.51          ?  {'success': 3}
+ - statfs                                           2          1.033          3.482        5.932          ?  {'ENOENT': 3} 
+ - execve                                           1         92.335         92.335       92.335          ?  {'success': 2}
+ - umask                                            1           1.71           1.71         1.71          ?  {'success': 2}
+ - unknown                                          1          1.168          1.168        1.168          ?  {'success': 2}
+ - write                                            1         29.187         29.187       29.187          ?  {'success': 2}
+ - openat                                           1          4.462          4.462        4.462          ?  {'success': 2}
+ - ioctl                                            1          1.502          1.502        1.502          ?  {'ENOTTY': 2} 
+Total:                                           2142                                                                      
+-----------------------------------------------------------------------------------------------------------------
+apt-config (2594, TID: 2594)                    Count            Min        Average          Max      Stdev  Return values 
+ - getrlimit                                     1022          0.577          0.637       11.093      0.506  {'success': 1023}
+ - fcntl                                         1021          0.609          0.703       13.845      0.756  {'success': 4, 'EBADF': 1019}
+ - mmap                                            19          1.235            2.5        4.272      0.763  {'success': 20}
+ - read                                            10          0.832            2.4        9.633      2.687  {'success': 11}
+ - close                                           10          0.747          1.053        1.483      0.257  {'success': 11}
+ - mprotect                                        10          1.928           3.16        5.529      1.043  {'success': 11}
+ - newfstat                                         9          0.805          1.157        1.858      0.354  {'success': 10}
+ - open                                             9          2.162          5.809       19.178      5.318  {'success': 10}
+ - access                                           6          1.694          2.574        3.442      0.698  {'ENOENT': 7} 
+ - rt_sigaction                                     6          0.851          3.647        16.48      6.298  {'success': 7}
+ - munmap                                           4          3.193          4.305        5.184      0.923  {'success': 5}
+ - dup2                                             3          0.733          0.921        1.099      0.183  {'success': 4}
+ - brk                                              3          0.873          1.382        1.894      0.511  {'success': 4}
+ - getdents                                         2          0.895          2.725        4.556          ?  {'success': 3}
+ - statfs                                           2          1.063          3.733        6.403          ?  {'ENOENT': 3} 
+ - execve                                           1        112.562        112.562      112.562          ?  {'success': 2}
+ - umask                                            1          1.437          1.437        1.437          ?  {'success': 2}
+ - unknown                                          1          1.345          1.345        1.345          ?  {'success': 2}
+ - write                                            1         28.375         28.375       28.375          ?  {'success': 2}
+ - openat                                           1          4.607          4.607        4.607          ?  {'success': 2}
+ - ioctl                                            1          1.603          1.603        1.603          ?  {'ENOTTY': 2} 
+Total:                                           2142                                                                      
+-----------------------------------------------------------------------------------------------------------------
+91-release-upgr (2599, TID: 2599)               Count            Min        Average          Max      Stdev  Return values 
+ - newstat                                        261          0.899          2.526       18.552      1.992  {'ENOTDIR': 19, 'ENOENT': 20, 'success': 225}
+ - newfstat                                       137          0.559          1.168       16.641      1.891  {'success': 138}
+ - read                                           125          0.644          4.233       37.101      6.516  {'success': 126}
+ - close                                           90           0.51           1.08         1.81      0.206  {'success': 91}
+ - open                                            75          1.848          6.144       36.027      4.945  {'ENOENT': 3, 'success': 74}
+ - rt_sigaction                                    68           0.67          0.785        2.273      0.278  {'success': 69}
+ - lseek                                           66          0.737          1.201        2.182      0.203  {'ESPIPE': 3, 'success': 65}
+ - mmap                                            64           0.98          3.012        5.462      1.265  {'success': 65}
+ - mprotect                                        24          1.941          4.968       19.502      4.123  {'success': 25}
+ - munmap                                          23          1.545          6.173       29.684      7.239  {'success': 24}
+ - brk                                             21          1.242          3.501        5.469      1.106  {'success': 22}
+ - getdents                                        21          0.877         39.896      439.015     95.988  {'success': 22}
+ - ioctl                                           15          0.749          1.037        1.859      0.325  {'ENOTTY': 14, 'success': 3}
+ - access                                          13          1.572          2.467        3.724      0.557  {'ENOENT': 14}
+ - newlstat                                        11          0.934          1.958        4.203      1.058  {'ENOENT': 2, 'success': 11}
+ - openat                                          10          2.592          3.714        4.741        0.8  {'success': 11}
+ - readlink                                         4          1.523          2.959        4.858      1.508  {'EINVAL': 3, 'success': 3}
+ - dup                                              3          0.997          1.616        2.702      0.943  {'success': 4}
+ - connect                                          2          2.912          8.371        13.83          ?  {'ENOENT': 3} 
+ - getrlimit                                        2          1.175          2.208         3.24          ?  {'success': 3}
+ - socket                                           2          1.675          6.842       12.009          ?  {'success': 3}
+ - dup2                                             1           0.99           0.99         0.99          ?  {'success': 2}
+ - futex                                            1          3.341          3.341        3.341          ?  {'EAGAIN': 2} 
+ - execve                                           1         90.497         90.497       90.497          ?  {'success': 2}
+ - write                                            1         70.735         70.735       70.735          ?  {'success': 2}
+ - rt_sigprocmask                                   1           1.22           1.22         1.22          ?  {'success': 2}
+ - set_robust_list                                  1          1.153          1.153        1.153          ?  {'success': 2}
+ - unknown                                          1          0.955          0.955        0.955          ?  {'success': 2}
+ - set_tid_address                                  1          1.387          1.387        1.387          ?  {'success': 2}
+ - sigaltstack                                      1          2.945          2.945        2.945          ?  {'success': 2}
+ - getuid                                           1          2.149          2.149        2.149          ?  {'success': 2}
+ - fcntl                                            1          1.222          1.222        1.222          ?  {'success': 2}
+Total:                                           1048                                                                      
+-----------------------------------------------------------------------------------------------------------------
+lttng-consumerd (2415, TID: 2422)               Count            Min        Average          Max      Stdev  Return values 
+ - ioctl                                          359          1.327          3.042       25.237      3.165  {'success': 359, 'EAGAIN': 2}
+ - splice                                         162          3.213         18.911        70.67     19.229  {'success': 163}
+ - sendmsg                                         98          2.216         92.191     7796.001    786.322  {'success': 99}
+ - write                                           87           2.84        286.252    11299.933   1553.585  {'success': 88}
+ - recvmsg                                         11          5.635        5185.85    41642.281  12598.715  {'success': 12}
+ - poll                                             6          1.427     915022.938   5490121.87 2241331.581  {'success': 7}
+ - close                                            3          1.183          1.606        2.297      0.604  {'success': 4}
+ - pipe                                             1          5.008          5.008        5.008          ?  {'success': 2}
+ - futex                                            1         22.577         22.577       22.577          ?  {'success': 2}
+Total:                                            728                                                                      
+-----------------------------------------------------------------------------------------------------------------
+sshd (2613, TID: 2613)                          Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                            67          1.181          3.101       12.765      1.591  {'success': 68}
+ - close                                           49           0.47          1.046          1.9      0.351  {'success': 50}
+ - mprotect                                        44          1.785           3.78       17.502       2.47  {'success': 45}
+ - access                                          33          1.015          2.415        5.418      0.937  {'ENOENT': 25, 'success': 10}
+ - newfstat                                        32          0.768          1.124         3.32      0.445  {'success': 33}
+ - open                                            32          2.517          5.283       19.857      4.076  {'ENXIO': 2, 'success': 32}
+ - read                                            25          0.926          3.086       22.022      4.815  {'success': 26}
+ - newstat                                         24           0.77          1.262        2.062      0.411  {'ENOENT': 11, 'success': 15}
+ - rt_sigaction                                    16          0.734          1.021         2.15      0.354  {'success': 17}
+ - brk                                             15          0.913          1.586        2.196      0.405  {'success': 16}
+ - geteuid                                         13          0.527          0.697        1.042      0.176  {'success': 14}
+ - getuid                                          13          0.515          0.836        1.887      0.418  {'success': 14}
+ - getegid                                         11          0.532          1.896       14.618       4.22  {'success': 12}
+ - getgid                                          10          0.528          0.615        0.795      0.089  {'success': 11}
+ - rt_sigprocmask                                   7          0.795          1.046        1.505      0.247  {'success': 8}
+ - munmap                                           7          1.743          4.341        6.102      1.636  {'success': 8}
+ - getdents                                         4          0.785          4.041        12.79      5.847  {'success': 5}
+ - connect                                          4          3.062         26.803       71.879     31.048  {'ENOENT': 3, 'success': 3}
+ - socket                                           4           1.97          3.865        6.113      1.851  {'success': 5}
+ - dup2                                             3          0.727          0.935         1.33      0.343  {'success': 4}
+ - getsockname                                      3          0.825          1.448        1.982      0.584  {'success': 4}
+ - getrlimit                                        3          0.905          1.015         1.18      0.146  {'success': 4}
+ - unknown                                          3           1.06           1.25        1.558      0.269  {'ENOSYS': 2, 'success': 3}
+ - execve                                           2          93.18        134.708      176.237          ?  {'success': 3}
+ - getgroups                                        2           0.72          0.821        0.921          ?  {'success': 3}
+ - shutdown                                         2           3.08         10.594       18.107          ?  {'success': 3}
+ - set_robust_list                                  2          1.015          1.383         1.75          ?  {'success': 3}
+ - lseek                                            2           0.83          0.978        1.125          ?  {'success': 3}
+ - openat                                           2          2.959          8.601       14.242          ?  {'success': 3}
+ - newuname                                         1          1.748          1.748        1.748          ?  {'success': 2}
+ - futex                                            1           3.09           3.09         3.09          ?  {'EAGAIN': 2} 
+ - getcwd                                           1          1.751          1.751        1.751          ?  {'success': 2}
+ - ioctl                                            1          1.307          1.307        1.307          ?  {'ENOTTY': 2} 
+ - getppid                                          1          0.907          0.907        0.907          ?  {'success': 2}
+ - getpgrp                                          1          0.938          0.938        0.938          ?  {'success': 2}
+ - setsid                                           1          7.823          7.823        7.823          ?  {'success': 2}
+ - getpid                                           1           0.87           0.87         0.87          ?  {'success': 2}
+ - write                                            1        169.183        169.183      169.183          ?  {'success': 2}
+ - chdir                                            1          3.118          3.118        3.118          ?  {'success': 2}
+ - recvmsg                                          1      89501.392      89501.392    89501.392          ?  {'success': 2}
+ - set_tid_address                                  1          1.283          1.283        1.283          ?  {'success': 2}
+ - sendmsg                                          1        592.641        592.641      592.641          ?  {'success': 2}
+Total:                                            447                                                                      
+-----------------------------------------------------------------------------------------------------------------
+sshd (2563, TID: 2563)                          Count            Min        Average          Max      Stdev  Return values 
+ - munmap                                          34          1.713          7.404       22.067      4.451  {'success': 35}
+ - close                                           31          0.667          1.078        1.858      0.352  {'success': 32}
+ - read                                            28          0.701          4.089       20.623      4.279  {'success': 29}
+ - setrlimit                                       16           0.63          0.765        1.889      0.305  {'success': 17}
+ - getrlimit                                       16          0.582          0.685        1.251      0.163  {'success': 17}
+ - open                                            16          1.864          4.242       12.406      2.879  {'ENOENT': 2, 'success': 16}
+ - mmap                                            15          1.432          3.314        7.277      1.937  {'success': 16}
+ - newfstat                                        15          0.875          1.389         2.64      0.614  {'success': 16}
+ - poll                                            13          1.997       7594.551    97466.652  27005.325  {'success': 14}
+ - recvmsg                                         13          1.133          4.499       11.492      3.382  {'success': 12, 'EAGAIN': 3}
+ - socket                                          13          3.034          5.985       11.637      2.691  {'success': 14}
+ - sendto                                          11          6.843         36.101      118.023     35.091  {'success': 12}
+ - getsockname                                     10           1.07          1.692        2.422      0.454  {'success': 11}
+ - lseek                                           10          0.767          1.046        1.785       0.32  {'success': 11}
+ - setfsuid                                         8          0.706          1.065         2.05      0.416  {'success': 9}
+ - setfsgid                                         8          0.718          1.102        2.086       0.43  {'success': 9}
+ - rt_sigaction                                     8          0.761          0.953         1.55       0.29  {'success': 9}
+ - connect                                          7          6.152          28.97      145.697     51.543  {'success': 8}
+ - fcntl                                            7          0.783          1.438        2.097      0.498  {'success': 8}
+ - recvfrom                                         6           1.26          2.058        2.869      0.546  {'success': 7}
+ - newstat                                          6          2.191          5.055        8.568      2.494  {'ENOENT': 3, 'success': 5}
+ - geteuid                                          4          0.815          1.337         2.02      0.616  {'success': 5}
+ - getgroups                                        4          0.667          0.787        0.953      0.139  {'success': 5}
+ - setgroups                                        4          0.947          1.731        2.992      0.899  {'success': 5}
+ - bind                                             3          2.583          4.153        5.422      1.443  {'success': 4}
+ - setregid                                         2          1.649          3.238        4.827          ?  {'success': 3}
+ - sendmsg                                          2        317.032        1115.91     1914.788          ?  {'success': 3}
+ - getdents                                         2          0.828           4.26        7.692          ?  {'success': 3}
+ - getpriority                                      1          1.357          1.357        1.357          ?  {'success': 2}
+ - getuid                                           1          1.309          1.309        1.309          ?  {'success': 2}
+ - socketpair                                       1          6.032          6.032        6.032          ?  {'success': 2}
+ - rename                                           1           20.8           20.8         20.8          ?  {'success': 2}
+ - getegid                                          1          1.212          1.212        1.212          ?  {'success': 2}
+ - umask                                            1          1.351          1.351        1.351          ?  {'success': 2}
+ - setresuid                                        1          3.449          3.449        3.449          ?  {'success': 2}
+ - setpriority                                      1          1.816          1.816        1.816          ?  {'success': 2}
+ - setreuid                                         1          2.375          2.375        2.375          ?  {'success': 2}
+ - wait4                                            1     331062.969     331062.969   331062.969          ?  {'success': 2}
+ - clone                                            1        213.977        213.977      213.977          ?  {'success': 2}
+ - rt_sigprocmask                                   1          1.109          1.109        1.109          ?  {'success': 2}
+ - openat                                           1          3.571          3.571        3.571          ?  {'success': 2}
+ - keyctl                                           1          8.534          8.534        8.534          ?  {'success': 2}
+Total:                                            326                                                                      
+-----------------------------------------------------------------------------------------------------------------
+apache2 (?, TID: 1113)                          Count            Min        Average          Max      Stdev  Return values 
+ - read                                            69           1.06        600.704    12660.788    1747.63  {'success': 70}
+ - write                                           37         17.825         27.184       81.123     11.526  {'success': 38}
+ - poll                                            35          2.187          40.28      698.861    152.123  {'success': 36}
+ - access                                          31          1.955          5.002        8.692      2.462  {'ENOENT': 16, 'success': 17}
+ - newstat                                         28          1.743          3.639       11.007      2.235  {'ENOENT': 5, 'success': 25}
+ - fcntl                                           19          0.747          2.056         9.54      1.973  {'success': 20}
+ - newlstat                                        17          1.261          2.791       11.324      2.557  {'ENOENT': 14, 'success': 5}
+ - getcwd                                          14          0.805          1.982         6.03      1.421  {'success': 15}
+ - setsockopt                                       7          1.347           2.81        6.877       1.89  {'success': 8}
+ - close                                            7          0.973           1.72        3.287      0.852  {'success': 8}
+ - select                                           6          2.647     840844.057  5005106.709 2040126.25  {'success': 7}
+ - setitimer                                        4          2.814        427.648     1675.051    831.642  {'success': 5}
+ - open                                             4           3.94          6.783       11.455      3.294  {'ENOENT': 2, 'success': 4}
+ - socket                                           3          8.869         13.039        19.71      5.837  {'success': 4}
+ - getrusage                                        3          2.017          4.437        5.733      2.097  {'success': 4}
+ - connect                                          3         11.914         24.673        38.49      13.32  {'success': 3, 'EINPROGRESS': 2}
+ - newfstat                                         3          1.505          1.647         1.82       0.16  {'success': 4}
+ - rt_sigaction                                     3          1.653          2.905          4.8      1.669  {'success': 4}
+ - getdents                                         2           1.09          9.391       17.692          ?  {'success': 3}
+ - chdir                                            2           5.74           7.55         9.36          ?  {'success': 3}
+ - writev                                           2         40.902         45.328       49.753          ?  {'success': 3}
+ - shutdown                                         2          14.15         29.612       45.074          ?  {'success': 3}
+ - getsockname                                      1          2.152          2.152        2.152          ?  {'success': 2}
+ - rt_sigprocmask                                   1          1.699          1.699        1.699          ?  {'success': 2}
+ - munmap                                           1          4.285          4.285        4.285          ?  {'success': 2}
+ - recvfrom                                         1          8.353          8.353        8.353          ?  {'success': 2}
+ - getsockopt                                       1           2.42           2.42         2.42          ?  {'success': 2}
+ - wait4                                            1       2936.776       2936.776     2936.776          ?  {'success': 2}
+ - clone                                            1        1045.25        1045.25      1045.25          ?  {'success': 2}
+ - mmap                                             1          5.387          5.387        5.387          ?  {'success': 2}
+ - openat                                           1          4.663          4.663        4.663          ?  {'success': 2}
+ - times                                            1           3.99           3.99         3.99          ?  {'success': 2}
+ - lseek                                            1          1.441          1.441        1.441          ?  {'success': 2}
+Total:                                            312                                                                      
+-----------------------------------------------------------------------------------------------------------------
+update-motd-upd (2587, TID: 2587)               Count            Min        Average          Max      Stdev  Return values 
+ - read                                            41          0.646         103.24     4117.225    642.645  {'success': 42}
+ - mmap                                            36          1.242          2.627        3.792      0.616  {'success': 37}
+ - close                                           34          0.512          0.922         1.78       0.36  {'success': 35}
+ - open                                            27           1.79          3.175        8.293      1.258  {'success': 28}
+ - mprotect                                        23          1.767          3.257        4.587      0.879  {'success': 24}
+ - newstat                                         15          0.651          1.894        3.725      0.981  {'ENOENT': 6, 'success': 11}
+ - newfstat                                        14          0.877          1.101        2.063        0.3  {'success': 15}
+ - access                                          13          1.318          2.259        3.723      0.598  {'ENOENT': 14}
+ - getdents                                         4          1.149         29.381        98.42      46.58  {'success': 5}
+ - brk                                              3          1.368          1.981         2.54      0.588  {'success': 4}
+ - munmap                                           2          3.375          4.215        5.055          ?  {'success': 3}
+ - openat                                           2          3.836          3.871        3.906          ?  {'success': 3}
+ - dup2                                             1          1.487          1.487        1.487          ?  {'success': 2}
+ - execve                                           1         67.782         67.782       67.782          ?  {'success': 2}
+ - clone                                            1         51.267         51.267       51.267          ?  {'success': 2}
+ - fcntl                                            1           1.69           1.69         1.69          ?  {'success': 2}
+ - unknown                                          1          0.997          0.997        0.997          ?  {'success': 2}
+ - write                                            1          4.582          4.582        4.582          ?  {'success': 2}
+ - lseek                                            1          1.065          1.065        1.065          ?  {'ESPIPE': 2} 
+ - wait4                                            1         16.228         16.228       16.228          ?  {'success': 2}
+ - pipe                                             1          4.212          4.212        4.212          ?  {'success': 2}
+Total:                                            223                                                                      
+-----------------------------------------------------------------------------------------------------------------
+update-motd-upd (2589, TID: 2589)               Count            Min        Average          Max      Stdev  Return values 
+ - read                                            41          0.614         102.05     4067.005    634.826  {'success': 42}
+ - mmap                                            36          1.145          2.353        3.805      0.526  {'success': 37}
+ - close                                           34          0.553          0.941        1.668      0.346  {'success': 35}
+ - open                                            27          1.488          2.451        7.515      1.199  {'success': 28}
+ - mprotect                                        23          1.899          3.056        5.017      0.747  {'success': 24}
+ - newstat                                         15           0.91          1.617        3.325      0.813  {'ENOENT': 6, 'success': 11}
+ - newfstat                                        14          0.741          0.998        2.072      0.354  {'success': 15}
+ - access                                          13          1.368           2.29        3.617      0.604  {'ENOENT': 14}
+ - getdents                                         4          0.943         15.877       51.682     24.235  {'success': 5}
+ - brk                                              3          1.598          2.256        3.102      0.769  {'success': 4}
+ - munmap                                           2          4.004          4.442         4.88          ?  {'success': 3}
+ - openat                                           2           3.16          3.224        3.287          ?  {'success': 3}
+ - dup2                                             1           1.24           1.24         1.24          ?  {'success': 2}
+ - execve                                           1         66.979         66.979       66.979          ?  {'success': 2}
+ - clone                                            1          51.04          51.04        51.04          ?  {'success': 2}
+ - fcntl                                            1           1.25           1.25         1.25          ?  {'success': 2}
+ - unknown                                          1          1.151          1.151        1.151          ?  {'success': 2}
+ - write                                            1          4.673          4.673        4.673          ?  {'success': 2}
+ - lseek                                            1           1.04           1.04         1.04          ?  {'ESPIPE': 2} 
+ - wait4                                            1         16.425         16.425       16.425          ?  {'success': 2}
+ - pipe                                             1          3.896          3.896        3.896          ?  {'success': 2}
+Total:                                            223                                                                      
+-----------------------------------------------------------------------------------------------------------------
+update-motd-upd (2591, TID: 2591)               Count            Min        Average          Max      Stdev  Return values 
+ - read                                            41          0.619        102.052     4076.108    636.248  {'success': 42}
+ - mmap                                            36          1.273            2.4        3.742      0.497  {'success': 37}
+ - close                                           34          0.477          0.943         1.63      0.321  {'success': 35}
+ - open                                            27          1.577          2.589         7.57      1.198  {'success': 28}
+ - mprotect                                        23          1.873          3.195        4.705      0.857  {'success': 24}
+ - newstat                                         15           0.78          1.695        3.337      0.908  {'ENOENT': 6, 'success': 11}
+ - newfstat                                        14          0.797          1.017        1.805      0.276  {'success': 15}
+ - access                                          13          1.343          2.246        3.387      0.585  {'ENOENT': 14}
+ - getdents                                         4          1.076         16.272       53.262      24.99  {'success': 5}
+ - brk                                              3          1.385          1.828        2.688      0.745  {'success': 4}
+ - munmap                                           2          3.395          4.361        5.326          ?  {'success': 3}
+ - openat                                           2           2.59          3.344        4.097          ?  {'success': 3}
+ - dup2                                             1           1.28           1.28         1.28          ?  {'success': 2}
+ - execve                                           1         67.025         67.025       67.025          ?  {'success': 2}
+ - clone                                            1         47.673         47.673       47.673          ?  {'success': 2}
+ - fcntl                                            1          1.205          1.205        1.205          ?  {'success': 2}
+ - unknown                                          1          1.115          1.115        1.115          ?  {'success': 2}
+ - write                                            1          4.155          4.155        4.155          ?  {'success': 2}
+ - lseek                                            1           1.01           1.01         1.01          ?  {'ESPIPE': 2} 
+ - wait4                                            1         16.202         16.202       16.202          ?  {'success': 2}
+ - pipe                                             1          3.468          3.468        3.468          ?  {'success': 2}
+Total:                                            223                                                                      
+-----------------------------------------------------------------------------------------------------------------
+update-motd-upd (2593, TID: 2593)               Count            Min        Average          Max      Stdev  Return values 
+ - read                                            41           0.67        110.526     4402.823     687.24  {'success': 42}
+ - mmap                                            36           1.29          2.481        4.049      0.543  {'success': 37}
+ - close                                           34          0.538          0.988        1.808      0.367  {'success': 35}
+ - open                                            27          1.493          2.643        7.275      1.212  {'success': 28}
+ - mprotect                                        23           1.86          3.336        5.339      0.928  {'success': 24}
+ - newstat                                         15          0.673          1.736        3.743      0.982  {'ENOENT': 6, 'success': 11}
+ - newfstat                                        14          0.805          1.049        1.907      0.292  {'success': 15}
+ - access                                          13          1.277          2.373        3.324      0.596  {'ENOENT': 14}
+ - getdents                                         4          1.019          16.16       52.015     24.272  {'success': 5}
+ - brk                                              3          1.428          1.974        2.487       0.53  {'success': 4}
+ - munmap                                           2          4.217          4.956        5.695          ?  {'success': 3}
+ - openat                                           2          3.202          3.639        4.075          ?  {'success': 3}
+ - dup2                                             1          1.309          1.309        1.309          ?  {'success': 2}
+ - execve                                           1         88.845         88.845       88.845          ?  {'success': 2}
+ - clone                                            1         50.119         50.119       50.119          ?  {'success': 2}
+ - fcntl                                            1          1.333          1.333        1.333          ?  {'success': 2}
+ - unknown                                          1          0.968          0.968        0.968          ?  {'success': 2}
+ - write                                            1          5.141          5.141        5.141          ?  {'success': 2}
+ - lseek                                            1          1.175          1.175        1.175          ?  {'ESPIPE': 2} 
+ - wait4                                            1          17.14          17.14        17.14          ?  {'success': 2}
+ - pipe                                             1          18.51          18.51        18.51          ?  {'success': 2}
+Total:                                            223                                                                      
+-----------------------------------------------------------------------------------------------------------------
+sshd (2612, TID: 2612)                          Count            Min        Average          Max      Stdev  Return values 
+ - rt_sigprocmask                                  26          0.787          2.536       31.791      5.979  {'success': 27}
+ - close                                           16           0.56          0.963        1.763      0.367  {'success': 17}
+ - fcntl                                           16          0.733          0.914        1.515      0.242  {'success': 17}
+ - select                                          13          2.028       7387.605    94530.891  26185.365  {'-514': 2, 'success': 13}
+ - read                                            13          0.803          3.449        7.045      2.119  {'success': 13, 'EAGAIN': 2}
+ - write                                            8         10.395         46.319      158.663     51.398  {'success': 9}
+ - socket                                           4          2.694          4.109         5.26      1.339  {'success': 5}
+ - getsockname                                      4          0.898            5.3        17.89      8.395  {'success': 5}
+ - getuid                                           4          0.642          1.167        2.307      0.787  {'success': 5}
+ - unknown                                          4          0.962          1.162        1.442      0.221  {'success': 5}
+ - newfstat                                         4           0.87          1.206         1.88      0.457  {'success': 5}
+ - open                                             4          3.012         20.513        69.95     32.976  {'success': 5}
+ - pipe                                             4          2.464          3.236        3.888      0.669  {'success': 5}
+ - rt_sigaction                                     3          0.893          1.675        2.299      0.716  {'success': 4}
+ - munmap                                           3          3.404          3.802        4.264      0.433  {'success': 4}
+ - sendto                                           3          6.742          9.826       14.405      4.044  {'success': 4}
+ - recvmsg                                          3          1.122          2.852        5.435      2.279  {'success': 4}
+ - mmap                                             3          2.223          3.056         3.99      0.888  {'success': 4}
+ - geteuid                                          2          0.606          0.616        0.626          ?  {'success': 3}
+ - setresuid                                        2          1.245          2.176        3.108          ?  {'EPERM': 2, 'success': 2}
+ - recvfrom                                         2          1.152          1.399        1.645          ?  {'success': 3}
+ - connect                                          2          5.092          5.114        5.137          ?  {'success': 3}
+ - setsockopt                                       2          1.342          1.502        1.663          ?  {'success': 3}
+ - getgid                                           2          0.636          0.863         1.09          ?  {'success': 3}
+ - lseek                                            2          0.812          1.016        1.221          ?  {'success': 3}
+ - wait4                                            2          1.465         12.665       23.865          ?  {'ECHILD': 2, 'success': 2}
+ - setgid                                           1          2.785          2.785        2.785          ?  {'success': 2}
+ - setuid                                           1          1.645          1.645        1.645          ?  {'EPERM': 2}  
+ - getegid                                          1          1.033          1.033        1.033          ?  {'success': 2}
+ - getsockopt                                       1          2.715          2.715        2.715          ?  {'success': 2}
+ - set_robust_list                                  1          1.945          1.945        1.945          ?  {'success': 2}
+ - newstat                                          1          5.949          5.949        5.949          ?  {'success': 2}
+ - setgroups                                        1           2.72           2.72         2.72          ?  {'success': 2}
+ - poll                                             1          2.941          2.941        2.941          ?  {'success': 2}
+ - clone                                            1        220.172        220.172      220.172          ?  {'success': 2}
+ - bind                                             1          2.056          2.056        2.056          ?  {'success': 2}
+ - setresgid                                        1          2.359          2.359        2.359          ?  {'success': 2}
+Total:                                            162                                                                      
+-----------------------------------------------------------------------------------------------------------------
+landscape-sysin (2585, TID: 2585)               Count            Min        Average          Max      Stdev  Return values 
+ - alarm                                           30          0.666          0.831         2.07      0.346  {'success': 31}
+ - close                                           25          0.492          0.784        1.562      0.275  {'success': 25, 'EBADF': 2}
+ - rt_sigaction                                    22          0.712          0.843        1.896      0.274  {'success': 23}
+ - fcntl                                           20          0.873          1.105        3.352       0.54  {'success': 21}
+ - read                                            11          0.745          1.042        2.694        0.6  {'success': 12}
+ - mmap                                             8          1.838          2.864        4.868      0.922  {'success': 9}
+ - getdents                                         6          0.877          5.089       16.683       5.94  {'success': 7}
+ - access                                           4          1.365          4.357        8.925      3.218  {'ENOENT': 5} 
+ - execve                                           4          3.153         80.066      304.057    149.344  {'ENOENT': 4, 'success': 2}
+ - newfstat                                         4          0.867          1.341         1.56       0.32  {'success': 5}
+ - open                                             4          3.095          4.123        5.504      1.005  {'success': 5}
+ - mprotect                                         4          1.947          3.837        5.683      1.759  {'success': 5}
+ - dup2                                             3          0.642          0.963        1.517      0.482  {'success': 4}
+ - brk                                              3           1.28           1.56        1.793       0.26  {'success': 4}
+ - openat                                           3          3.233          7.192        15.03      6.788  {'success': 4}
+ - munmap                                           2          4.702          6.006         7.31          ?  {'success': 3}
+ - unknown                                          1          1.263          1.263        1.263          ?  {'success': 2}
+ - lseek                                            1           1.23           1.23         1.23          ?  {'success': 2}
+ - set_robust_list                                  1          1.415          1.415        1.415          ?  {'success': 2}
+ - kill                                             1           2.75           2.75         2.75          ?  {'success': 2}
+ - write                                            1         87.415         87.415       87.415          ?  {'success': 2}
+Total:                                            158                                                                      
+-----------------------------------------------------------------------------------------------------------------
+update-motd-upd (2595, TID: 2595)               Count            Min        Average          Max      Stdev  Return values 
+ - newfstatat                                      84          1.313           1.83       14.143      1.414  {'success': 85}
+ - close                                           13          0.478          0.912        1.752      0.406  {'success': 14}
+ - mmap                                             9          1.877          6.618        36.36     11.183  {'success': 10}
+ - fchdir                                           9          0.605          0.858        1.984      0.432  {'success': 10}
+ - open                                             7          1.549           2.69        3.813      0.971  {'success': 8}
+ - mprotect                                         6          2.035           3.83        5.519      1.485  {'success': 7}
+ - access                                           4           1.54          2.936        3.742      0.996  {'ENOENT': 5} 
+ - getdents                                         4          0.718         19.067       53.498      23.73  {'success': 5}
+ - newfstat                                         4          0.805          1.028         1.32      0.215  {'success': 5}
+ - newstat                                          4           1.54          5.621       16.142      7.054  {'ENOENT': 4, 'success': 2}
+ - brk                                              3          1.004          1.874        3.137      1.119  {'success': 4}
+ - read                                             2          1.434          1.462         1.49          ?  {'success': 3}
+ - openat                                           2          2.105          2.176        2.247          ?  {'success': 3}
+ - ioctl                                            2          1.335          1.355        1.376          ?  {'ENOTTY': 3} 
+ - dup2                                             1          1.342          1.342        1.342          ?  {'success': 2}
+ - execve                                           1         74.096         74.096       74.096          ?  {'success': 2}
+ - newuname                                         1          2.055          2.055        2.055          ?  {'success': 2}
+ - unknown                                          1          1.141          1.141        1.141          ?  {'success': 2}
+ - munmap                                           1           4.86           4.86         4.86          ?  {'success': 2}
+Total:                                            158                                                                      
+-----------------------------------------------------------------------------------------------------------------
+run-parts (2597, TID: 2597)                     Count            Min        Average          Max      Stdev  Return values 
+ - close                                           17          0.508          1.976       16.874       3.86  {'success': 18}
+ - mmap                                            14          1.815          2.779         4.64      0.829  {'success': 15}
+ - rt_sigaction                                    14          0.692          0.883        1.401      0.232  {'success': 15}
+ - read                                            13          1.072       3928.352    48925.761  13523.189  {'success': 14}
+ - newstat                                         11          0.912          2.091        4.635      1.364  {'ENOENT': 6, 'success': 7}
+ - mprotect                                         8          2.127           3.98        6.273      1.674  {'success': 9}
+ - open                                             7           3.17          5.468       10.908      2.716  {'success': 8}
+ - brk                                              6          0.743          1.437        2.016      0.483  {'success': 7}
+ - access                                           6          1.424          2.852        5.071      1.372  {'ENOENT': 7} 
+ - fcntl                                            6          0.826          1.118        1.696      0.338  {'success': 7}
+ - clone                                            5         25.816         33.493       57.379     13.413  {'success': 6}
+ - wait4                                            5          2.838        150.444      558.374    230.298  {'success': 6}
+ - pipe                                             4           3.69          4.029        4.872      0.565  {'success': 5}
+ - newfstat                                         4           0.91          1.182        1.527      0.278  {'success': 5}
+ - geteuid                                          3           1.05          1.188        1.437      0.216  {'success': 4}
+ - dup2                                             2          1.042          1.169        1.297          ?  {'success': 3}
+ - execve                                           2         71.714         90.023      108.333          ?  {'success': 3}
+ - getppid                                          2           0.85          0.985        1.119          ?  {'success': 3}
+ - munmap                                           2          4.533          4.551         4.57          ?  {'success': 3}
+ - getpid                                           2          1.014          1.169        1.325          ?  {'success': 3}
+ - unknown                                          2          1.015           1.28        1.544          ?  {'success': 3}
+ - faccessat                                        1          3.032          3.032        3.032          ?  {'success': 2}
+ - getcwd                                           1           1.41           1.41         1.41          ?  {'success': 2}
+ - write                                            1           2.24           2.24         2.24          ?  {'success': 2}
+ - rt_sigprocmask                                   1          1.802          1.802        1.802          ?  {'success': 2}
+Total:                                            139                                                                      
+-----------------------------------------------------------------------------------------------------------------
+run-parts (2586, TID: 2586)                     Count            Min        Average          Max      Stdev  Return values 
+ - close                                           16          0.653          1.129        1.776      0.436  {'success': 17}
+ - mmap                                            14          1.693          2.522        4.278      0.759  {'success': 15}
+ - read                                            14          1.015         2234.6     7820.273   3485.569  {'success': 15}
+ - rt_sigaction                                    14          0.691          0.854        1.202       0.18  {'success': 15}
+ - newstat                                         10          0.995          2.059        4.123      1.184  {'ENOENT': 6, 'success': 6}
+ - mprotect                                         8          2.359          3.614         5.12      1.209  {'success': 9}
+ - brk                                              6          0.805          1.402          1.8      0.427  {'success': 7}
+ - access                                           6          1.278           2.22        3.442      0.915  {'ENOENT': 7} 
+ - clone                                            6          26.78         28.672       34.675      3.158  {'success': 7}
+ - open                                             6           2.83           3.71        4.692      0.647  {'success': 7}
+ - wait4                                            6          4.165        111.074      572.363    227.809  {'success': 7}
+ - pipe                                             5          3.578          3.805        4.232      0.276  {'success': 6}
+ - fcntl                                            4          0.893          1.081        1.276      0.217  {'success': 5}
+ - newfstat                                         4          0.908          1.185        1.471      0.296  {'success': 5}
+ - geteuid                                          3          0.845          1.027        1.208      0.182  {'success': 4}
+ - execve                                           2         73.255         75.228       77.202          ?  {'success': 3}
+ - getppid                                          2          0.797          0.947        1.097          ?  {'success': 3}
+ - munmap                                           2          4.253          4.332         4.41          ?  {'success': 3}
+ - getpid                                           2          1.085          1.315        1.546          ?  {'success': 3}
+ - unknown                                          2          1.087          1.129         1.17          ?  {'success': 3}
+ - faccessat                                        1          3.266          3.266        3.266          ?  {'success': 2}
+ - getcwd                                           1            1.7            1.7          1.7          ?  {'success': 2}
+ - rt_sigprocmask                                   1          2.044          2.044        2.044          ?  {'success': 2}
+Total:                                            135                                                                      
+-----------------------------------------------------------------------------------------------------------------
+run-parts (2605, TID: 2605)                     Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                            14           1.75          3.028        8.226      1.684  {'success': 15}
+ - rt_sigaction                                    14          0.696            0.9        1.238      0.191  {'success': 15}
+ - close                                           12          0.512          1.103        1.806      0.454  {'success': 13}
+ - read                                            12          1.042         281.02     1912.903      583.1  {'success': 13}
+ - newstat                                         10          0.898          1.901         4.11      1.155  {'ENOENT': 6, 'success': 6}
+ - mprotect                                         8          1.984           3.56        5.508      1.455  {'success': 9}
+ - brk                                              6          0.787          1.412         1.87      0.488  {'success': 7}
+ - access                                           6          1.257          2.384        3.977      1.124  {'ENOENT': 7} 
+ - open                                             6          2.825          3.746         4.72      0.725  {'success': 7}
+ - fcntl                                            4          1.157          1.177          1.2      0.019  {'success': 5}
+ - clone                                            4         25.873         31.714        44.05      8.418  {'success': 5}
+ - newfstat                                         4          0.762          1.108        1.425      0.345  {'success': 5}
+ - wait4                                            4          4.934        171.604      545.678    251.695  {'success': 5}
+ - geteuid                                          3          0.848          0.947        1.009      0.087  {'success': 4}
+ - pipe                                             3          3.502           3.89         4.19      0.352  {'success': 4}
+ - execve                                           2         71.692         73.312       74.933          ?  {'success': 3}
+ - getppid                                          2          0.735          0.746        0.757          ?  {'success': 3}
+ - munmap                                           2          4.677          4.795        4.912          ?  {'success': 3}
+ - getpid                                           2          1.045           1.06        1.075          ?  {'success': 3}
+ - unknown                                          2          1.097          1.107        1.116          ?  {'success': 3}
+ - faccessat                                        1          2.495          2.495        2.495          ?  {'success': 2}
+ - getcwd                                           1          1.803          1.803        1.803          ?  {'success': 2}
+ - rt_sigprocmask                                   1          1.662          1.662        1.662          ?  {'success': 2}
+Total:                                            123                                                                      
+-----------------------------------------------------------------------------------------------------------------
+env (2566, TID: 2566)                           Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                            14          2.072          3.156        5.582      1.039  {'success': 15}
+ - access                                          13          1.562          2.749        4.364      0.989  {'ENOENT': 7, 'success': 8}
+ - mprotect                                         8           2.25           4.11        5.728      1.375  {'success': 9}
+ - newstat                                          7          2.967          4.095        6.944      1.349  {'success': 8}
+ - execve                                           7           2.51         26.664       86.539     39.162  {'ENOENT': 6, 'success': 3}
+ - clone                                            7         31.435         38.159       50.037      6.447  {'success': 8}
+ - wait4                                            7       1143.389      46799.791   220348.981  78937.997  {'success': 8}
+ - brk                                              6          0.973           1.81        3.238      0.778  {'success': 7}
+ - close                                            5          0.952          1.284        1.509      0.297  {'success': 6}
+ - newfstat                                         4          1.092          1.438        1.733      0.283  {'success': 5}
+ - open                                             4          3.233          3.723         4.38      0.572  {'success': 5}
+ - unknown                                          2          1.176          1.258         1.34          ?  {'success': 3}
+ - getdents                                         2          1.485          5.992         10.5          ?  {'success': 3}
+ - read                                             2            1.8          1.875        1.949          ?  {'success': 3}
+ - munmap                                           2          5.081          5.262        5.443          ?  {'success': 3}
+ - rt_sigprocmask                                   1          1.449          1.449        1.449          ?  {'success': 2}
+ - umask                                            1          1.225          1.225        1.225          ?  {'success': 2}
+ - rt_sigaction                                     1           1.49           1.49         1.49          ?  {'success': 2}
+ - openat                                           1          5.595          5.595        5.595          ?  {'success': 2}
+Total:                                             94                                                                      
+-----------------------------------------------------------------------------------------------------------------
+run-parts (2611, TID: 2611)                     Count            Min        Average          Max      Stdev  Return values 
+ - rt_sigaction                                    14          0.694          0.842        1.265      0.191  {'success': 15}
+ - mmap                                            14          1.697          2.598        4.433      0.821  {'success': 15}
+ - mprotect                                         8          2.091          6.976       18.342      6.633  {'success': 9}
+ - access                                           6          1.246          2.348        3.864       1.11  {'ENOENT': 7} 
+ - close                                            6           0.77          1.097          1.7      0.385  {'success': 7}
+ - brk                                              6          0.915          1.316          1.7      0.307  {'success': 7}
+ - read                                             6           0.77          3.593       15.406        5.8  {'success': 7}
+ - open                                             6          2.612          3.658        4.831      0.784  {'success': 7}
+ - newstat                                          4          1.035          3.072        5.662      1.927  {'ENOENT': 2, 'success': 4}
+ - newfstat                                         4          0.866          1.161        1.423      0.252  {'success': 5}
+ - fcntl                                            4          0.915          1.077        1.231      0.157  {'success': 5}
+ - geteuid                                          3          0.729          0.925        1.065      0.175  {'success': 4}
+ - unknown                                          2          1.095          1.133         1.17          ?  {'success': 3}
+ - execve                                           2         72.051         72.306       72.562          ?  {'success': 3}
+ - getppid                                          2          0.618          0.811        1.005          ?  {'success': 3}
+ - munmap                                           2          4.655          4.676        4.697          ?  {'success': 3}
+ - getpid                                           2          1.015          1.016        1.018          ?  {'success': 3}
+ - getcwd                                           1          1.322          1.322        1.322          ?  {'success': 2}
+ - rt_sigprocmask                                   1          1.602          1.602        1.602          ?  {'success': 2}
+ - faccessat                                        1          3.127          3.127        3.127          ?  {'success': 2}
+Total:                                             94                                                                      
+-----------------------------------------------------------------------------------------------------------------
+update-motd-fsc (2608, TID: 2608)               Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                            15          1.195          3.671       18.615      4.176  {'success': 16}
+ - newfstat                                        11          0.653          0.961        1.366      0.238  {'success': 12}
+ - mprotect                                        10          1.768          3.351        5.116      1.041  {'success': 11}
+ - read                                             9          0.733          5.216       17.667      5.881  {'success': 10}
+ - close                                            9          0.561          1.071         1.54      0.311  {'success': 10}
+ - open                                             7          2.433          6.814       21.195      6.739  {'success': 8}
+ - access                                           6          1.263          2.458        3.508      0.756  {'ENOENT': 7} 
+ - rt_sigaction                                     4          0.852          0.996        1.355      0.241  {'success': 5}
+ - newstat                                          4          1.153          2.897          6.0      2.257  {'ENOENT': 4, 'success': 2}
+ - brk                                              3           1.18          1.523        2.051      0.464  {'success': 4}
+ - fcntl                                            2          0.821          0.984        1.147          ?  {'success': 3}
+ - ioctl                                            2          1.268          1.641        2.015          ?  {'ENOTTY': 3} 
+ - dup2                                             1          0.777          0.777        0.777          ?  {'success': 2}
+ - execve                                           1         88.844         88.844       88.844          ?  {'success': 2}
+ - sigaltstack                                      1          1.585          1.585        1.585          ?  {'success': 2}
+ - unknown                                          1          1.015          1.015        1.015          ?  {'success': 2}
+ - write                                            1         18.162         18.162       18.162          ?  {'success': 2}
+ - munmap                                           1          5.025          5.025        5.025          ?  {'success': 2}
+ - getgroups                                        1          1.761          1.761        1.761          ?  {'success': 2}
+Total:                                             89                                                                      
+-----------------------------------------------------------------------------------------------------------------
+tmux (1228, TID: 1228)                          Count            Min        Average          Max      Stdev  Return values 
+ - poll                                            15      91199.189     333773.168   500639.267 180418.342  {'success': 16}
+ - read                                            10         14.376         19.379       33.473       6.08  {'success': 11}
+ - newfstat                                        10           1.51          3.311        6.384      1.197  {'success': 11}
+ - close                                           10          0.908          2.063        2.996      0.499  {'success': 11}
+ - open                                            10          8.447         17.208        33.22      6.183  {'success': 11}
+ - munmap                                          10          5.068         10.005        16.29      2.678  {'success': 11}
+ - ioctl                                           10          2.852          4.369         7.55      1.326  {'success': 11}
+ - mmap                                            10          4.278          8.308        15.22      2.707  {'success': 11}
+Total:                                             85                                                                      
+-----------------------------------------------------------------------------------------------------------------
+cgmanager (252, TID: 252)                       Count            Min        Average          Max      Stdev  Return values 
+ - read                                            19           0.99          3.509       22.674      5.083  {'success': 11, 'EAGAIN': 10}
+ - newlstat                                        11          1.718          2.713        4.296      0.728  {'success': 12}
+ - waitid                                           9          1.332          1.699         2.28      0.348  {'ECHILD': 10}
+ - select                                           9          3.838      47647.032   428245.207 142724.353  {'success': 10}
+ - recvmsg                                          5           1.64          2.941         4.58      1.094  {'success': 5, 'EAGAIN': 2}
+ - close                                            5          1.265          1.514        1.992       0.29  {'success': 6}
+ - write                                            4          2.502          3.395        4.324      0.744  {'success': 5}
+ - open                                             3          4.821          8.878       13.246      4.221  {'success': 4}
+ - sendmsg                                          3          6.083       1906.105     5703.644   3288.766  {'success': 4}
+ - newstat                                          2          2.602          3.342        4.083          ?  {'success': 3}
+ - fcntl                                            2          1.246          1.432        1.618          ?  {'success': 3}
+ - sendto                                           2          4.032          5.406         6.78          ?  {'success': 3}
+ - mmap                                             2          3.102          5.221         7.34          ?  {'success': 3}
+ - newfstat                                         2          1.331          1.843        2.355          ?  {'success': 3}
+ - munmap                                           2          4.776          6.755        8.734          ?  {'success': 3}
+ - getsockopt                                       2          2.474          2.727         2.98          ?  {'success': 3}
+ - getsockname                                      1          1.768          1.768        1.768          ?  {'success': 2}
+ - accept4                                          1          9.301          9.301        9.301          ?  {'success': 2}
+Total:                                             84                                                                      
+-----------------------------------------------------------------------------------------------------------------
+release-upgrade (2602, TID: 2602)               Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                            17          1.223          2.875        4.923      0.901  {'success': 18}
+ - close                                           11          0.596          1.028        1.495      0.306  {'success': 12}
+ - mprotect                                        10          2.023          3.667        5.767      1.232  {'success': 11}
+ - newfstat                                         7          0.788          1.059        1.503      0.261  {'success': 8}
+ - access                                           6          1.576          2.577        3.414       0.68  {'ENOENT': 7} 
+ - read                                             6          0.813          3.429       13.645      5.015  {'success': 7}
+ - open                                             6          2.469          4.775       12.151      3.665  {'success': 7}
+ - newstat                                          4          1.155          1.996        3.503      1.087  {'ENOENT': 4, 'success': 2}
+ - brk                                              3          0.833           1.38         1.99      0.581  {'success': 4}
+ - munmap                                           3          3.313          4.449        5.153      0.993  {'success': 4}
+ - statfs                                           2          1.297           6.03       10.763          ?  {'ENOENT': 3} 
+ - dup2                                             1          1.129          1.129        1.129          ?  {'success': 2}
+ - execve                                           1         86.112         86.112       86.112          ?  {'success': 2}
+ - unknown                                          1          1.185          1.185        1.185          ?  {'success': 2}
+ - write                                            1         15.981         15.981       15.981          ?  {'success': 2}
+ - newlstat                                         1          3.121          3.121        3.121          ?  {'success': 2}
+Total:                                             80                                                                      
+-----------------------------------------------------------------------------------------------------------------
+update-motd-fsc (2606, TID: 2606)               Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                            17          1.417          2.482        4.947      0.765  {'success': 18}
+ - close                                           11          0.589          0.997        1.556      0.296  {'success': 12}
+ - mprotect                                        10          1.953           4.98       21.369      5.836  {'success': 11}
+ - newfstat                                         7          0.775          1.126         1.37      0.219  {'success': 8}
+ - access                                           6          1.383          2.679         3.33      0.748  {'ENOENT': 7} 
+ - read                                             6          0.704          2.398         9.09      3.284  {'success': 7}
+ - open                                             6          2.282           4.03         8.67      2.357  {'success': 7}
+ - newstat                                          4          0.885           1.71        2.968      0.967  {'ENOENT': 4, 'success': 2}
+ - brk                                              3          1.131          1.587        2.255      0.591  {'success': 4}
+ - munmap                                           3          3.368          4.492        5.215      0.986  {'success': 4}
+ - statfs                                           2          1.106          3.658         6.21          ?  {'ENOENT': 3} 
+ - dup2                                             1          1.301          1.301        1.301          ?  {'success': 2}
+ - execve                                           1         67.895         67.895       67.895          ?  {'success': 2}
+ - unknown                                          1          1.005          1.005        1.005          ?  {'success': 2}
+ - write                                            1         15.826         15.826       15.826          ?  {'success': 2}
+ - newlstat                                         1          2.955          2.955        2.955          ?  {'success': 2}
+Total:                                             80                                                                      
+-----------------------------------------------------------------------------------------------------------------
+run-parts (2567, TID: 2567)                     Count            Min        Average          Max      Stdev  Return values 
+ - close                                           11           0.66          1.196        2.061      0.559  {'success': 12}
+ - read                                            11          0.972         736.25     5664.101   1725.193  {'success': 12}
+ - mmap                                             7           2.17          3.486        5.855      1.207  {'success': 8}
+ - rt_sigaction                                     7          0.835          1.064        1.529       0.28  {'success': 8}
+ - mprotect                                         4           2.43          4.696         7.63      2.327  {'success': 5}
+ - fcntl                                            4           0.95          1.145        1.505      0.248  {'success': 5}
+ - open                                             4          2.666          4.628        6.238      1.723  {'success': 5}
+ - brk                                              3          1.294          1.931        2.641      0.676  {'success': 4}
+ - clone                                            3          29.11          34.41       40.587      5.789  {'success': 4}
+ - access                                           3            2.2          2.949        4.093      1.006  {'ENOENT': 4} 
+ - pipe                                             3           4.79            4.9        5.008      0.109  {'success': 4}
+ - wait4                                            3         55.023         76.062      114.747     33.545  {'success': 4}
+ - newfstat                                         2          1.275          1.572        1.869          ?  {'success': 3}
+ - execve                                           1         95.662         95.662       95.662          ?  {'success': 2}
+ - geteuid                                          1          1.069          1.069        1.069          ?  {'success': 2}
+ - faccessat                                        1          4.543          4.543        4.543          ?  {'success': 2}
+ - getppid                                          1           0.91           0.91         0.91          ?  {'success': 2}
+ - munmap                                           1          5.465          5.465        5.465          ?  {'success': 2}
+ - getpid                                           1          1.316          1.316        1.316          ?  {'success': 2}
+ - unknown                                          1          1.367          1.367        1.367          ?  {'success': 2}
+ - getcwd                                           1           1.84           1.84         1.84          ?  {'success': 2}
+ - write                                            1           7.23           7.23         7.23          ?  {'success': 2}
+ - rt_sigprocmask                                   1          2.152          2.152        2.152          ?  {'success': 2}
+Total:                                             75                                                                      
+-----------------------------------------------------------------------------------------------------------------
+50-landscape-sy (2575, TID: 2575)               Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                            12          2.344          3.007         4.24      0.573  {'success': 13}
+ - close                                           12           0.62            1.0        1.406      0.334  {'success': 13}
+ - mprotect                                         8          2.193          3.974        5.847      1.199  {'success': 9}
+ - newfstat                                         7          0.937          1.245        1.835      0.363  {'success': 8}
+ - newstat                                          6          1.039          1.447        2.354      0.592  {'ENOENT': 6, 'success': 2}
+ - access                                           5          1.447          3.051        4.274      1.123  {'ENOENT': 6} 
+ - read                                             5          1.153          5.299       21.099      8.835  {'success': 6}
+ - open                                             5          3.265          4.609        8.473      2.191  {'success': 6}
+ - brk                                              3          1.412          1.667        2.026       0.32  {'success': 4}
+ - dup2                                             2           0.89          1.138        1.386          ?  {'success': 3}
+ - fcntl                                            2          0.912          1.055        1.198          ?  {'success': 3}
+ - munmap                                           2           4.67          5.264        5.858          ?  {'success': 3}
+ - ioctl                                            2          1.271           1.56        1.848          ?  {'ENOTTY': 3} 
+ - execve                                           1         78.879         78.879       78.879          ?  {'success': 2}
+ - unknown                                          1           1.19           1.19         1.19          ?  {'success': 2}
+ - write                                            1         20.804         20.804       20.804          ?  {'success': 2}
+ - openat                                           1         11.996         11.996       11.996          ?  {'success': 2}
+Total:                                             75                                                                      
+-----------------------------------------------------------------------------------------------------------------
+run-parts (2571, TID: 2571)                     Count            Min        Average          Max      Stdev  Return values 
+ - newstat                                         12          1.075          1.581        3.015      0.612  {'ENOENT': 11, 'success': 3}
+ - close                                            8          0.672          1.087         1.92      0.439  {'success': 8, 'EBADF': 2}
+ - mmap                                             7          2.091          2.885        4.562      0.789  {'success': 8}
+ - rt_sigaction                                     7          0.803          0.987         1.56       0.28  {'success': 8}
+ - read                                             5          0.797          1.523        2.457      0.613  {'success': 6}
+ - mprotect                                         4          2.187          3.806        5.091      1.463  {'success': 5}
+ - fcntl                                            4          0.782          1.008        1.437      0.293  {'success': 5}
+ - open                                             4          1.837          3.475        4.861      1.306  {'success': 5}
+ - brk                                              3            0.9            1.4         1.73       0.44  {'success': 4}
+ - access                                           3          1.783          2.612        3.567      0.899  {'ENOENT': 4} 
+ - clone                                            2         28.607         31.581       34.554          ?  {'success': 3}
+ - newfstat                                         2          0.958           1.21        1.462          ?  {'success': 3}
+ - wait4                                            2         88.028         736.77     1385.512          ?  {'success': 3}
+ - execve                                           1         81.154         81.154       81.154          ?  {'success': 2}
+ - getcwd                                           1          1.752          1.752        1.752          ?  {'success': 2}
+ - geteuid                                          1          1.249          1.249        1.249          ?  {'success': 2}
+ - faccessat                                        1          3.432          3.432        3.432          ?  {'success': 2}
+ - getppid                                          1          0.857          0.857        0.857          ?  {'success': 2}
+ - munmap                                           1          5.107          5.107        5.107          ?  {'success': 2}
+ - getpid                                           1          1.125          1.125        1.125          ?  {'success': 2}
+ - unknown                                          1          1.146          1.146        1.146          ?  {'success': 2}
+ - pipe                                             1          4.145          4.145        4.145          ?  {'success': 2}
+ - write                                            1          3.635          3.635        3.635          ?  {'success': 2}
+ - rt_sigprocmask                                   1          1.795          1.795        1.795          ?  {'success': 2}
+Total:                                             74                                                                      
+-----------------------------------------------------------------------------------------------------------------
+systemd-logind (389, TID: 389)                  Count            Min        Average          Max      Stdev  Return values 
+ - poll                                             8          1.945        101.919      426.981    151.985  {'success': 9}
+ - recvmsg                                          6           1.64          2.592        4.115      1.027  {'success': 4, 'EAGAIN': 4}
+ - close                                            5          1.532          1.736        1.917      0.163  {'success': 6}
+ - fcntl                                            5          1.354          1.746        1.985       0.26  {'success': 6}
+ - newlstat                                         4          2.638          5.184         9.57      3.168  {'ENOENT': 3, 'success': 3}
+ - sendto                                           4          2.391          3.775        4.826      1.115  {'success': 5}
+ - read                                             4          1.314          3.742        8.035      3.003  {'success': 5}
+ - lseek                                            4          1.569          1.808        2.017      0.242  {'success': 5}
+ - munmap                                           3          5.231          7.349         8.76      1.868  {'success': 4}
+ - mmap                                             3          3.594          5.689         7.48      1.961  {'success': 4}
+ - write                                            3          6.851         12.036       19.632      6.723  {'success': 4}
+ - newfstat                                         3          1.415          1.952          2.4      0.498  {'success': 4}
+ - open                                             3          9.061         21.528       40.931      17.03  {'success': 4}
+ - sendmsg                                          3          3.197          6.268       10.678      3.916  {'success': 4}
+ - unlink                                           2          4.981          7.883       10.786          ?  {'success': 3}
+ - mkdir                                            2          2.734          3.537         4.34          ?  {'EEXIST': 3} 
+ - epoll_wait                                       2          2.292     216582.136    433161.98          ?  {'success': 3}
+ - fchmod                                           2          3.444          4.606        5.769          ?  {'success': 3}
+ - rename                                           2         11.409         15.627       19.844          ?  {'success': 3}
+ - socket                                           1          8.555          8.555        8.555          ?  {'success': 2}
+ - geteuid                                          1          1.789          1.789        1.789          ?  {'success': 2}
+ - epoll_ctl                                        1          6.416          6.416        6.416          ?  {'success': 2}
+ - getsockname                                      1          2.455          2.455        2.455          ?  {'success': 2}
+ - connect                                          1         17.531         17.531       17.531          ?  {'success': 2}
+Total:                                             73                                                                      
+-----------------------------------------------------------------------------------------------------------------
+run-parts (2574, TID: 2574)                     Count            Min        Average          Max      Stdev  Return values 
+ - close                                            7          0.574          1.277         1.93      0.485  {'success': 8}
+ - mmap                                             7          1.938          2.989        5.097      1.007  {'success': 8}
+ - read                                             7          1.465        551.798     2227.123    832.506  {'success': 8}
+ - rt_sigaction                                     7            0.8          0.987        1.489       0.26  {'success': 8}
+ - clone                                            4         30.185          32.41       34.894      2.067  {'success': 5}
+ - mprotect                                         4          2.323         692.72     2757.536   1376.545  {'success': 5}
+ - wait4                                            4          3.599      53163.473   211612.765 105633.636  {'success': 5}
+ - brk                                              3          1.034          1.859        2.419       0.73  {'success': 4}
+ - access                                           3           1.53          2.843        4.386      1.442  {'ENOENT': 4} 
+ - write                                            3          1.378          2.939         3.79      1.353  {'success': 4}
+ - open                                             3          3.422          5.432        8.563      2.748  {'success': 4}
+ - fcntl                                            2          0.972           1.19        1.408          ?  {'success': 3}
+ - pipe                                             2          4.885         13.961       23.037          ?  {'success': 3}
+ - newfstat                                         2          0.981          1.214        1.447          ?  {'success': 3}
+ - execve                                           1         95.945         95.945       95.945          ?  {'success': 2}
+ - geteuid                                          1          1.264          1.264        1.264          ?  {'success': 2}
+ - getppid                                          1          0.829          0.829        0.829          ?  {'success': 2}
+ - munmap                                           1          7.045          7.045        7.045          ?  {'success': 2}
+ - getpid                                           1          1.068          1.068        1.068          ?  {'success': 2}
+ - unknown                                          1           1.11           1.11         1.11          ?  {'success': 2}
+ - getcwd                                           1          1.827          1.827        1.827          ?  {'success': 2}
+ - rt_sigprocmask                                   1          1.778          1.778        1.778          ?  {'success': 2}
+Total:                                             66                                                                      
+-----------------------------------------------------------------------------------------------------------------
+ldconfig (2583, TID: 2583)                      Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                             9          1.681          2.451        4.163      0.755  {'success': 10}
+ - brk                                              7          0.698          1.239        1.735      0.409  {'success': 8}
+ - rt_sigaction                                     7           0.69          0.853        1.237      0.192  {'success': 8}
+ - write                                            6           14.5         44.308      160.994     57.525  {'success': 7}
+ - access                                           4          1.227           2.35        3.615      0.987  {'ENOENT': 5} 
+ - close                                            4          0.735           1.03        1.378      0.266  {'success': 5}
+ - newfstat                                         4           0.77          1.283        1.719      0.399  {'success': 5}
+ - open                                             4          3.003          3.378        3.663      0.305  {'success': 5}
+ - mprotect                                         4           2.09          3.518        4.572      1.153  {'success': 5}
+ - unknown                                          2          0.974           1.14        1.306          ?  {'success': 3}
+ - newstat                                          2          1.025          1.524        2.023          ?  {'success': 3}
+ - execve                                           2         58.879         65.091       71.303          ?  {'success': 3}
+ - fcntl                                            2          0.837          1.046        1.254          ?  {'success': 3}
+ - read                                             2           1.41          1.526        1.643          ?  {'success': 3}
+ - munmap                                           2          4.238          4.754         5.27          ?  {'success': 3}
+ - readlink                                         1         20.292         20.292       20.292          ?  {'success': 2}
+ - geteuid                                          1          1.068          1.068        1.068          ?  {'success': 2}
+ - newuname                                         1          1.675          1.675        1.675          ?  {'success': 2}
+ - getppid                                          1          0.662          0.662        0.662          ?  {'success': 2}
+ - getpid                                           1          1.048          1.048        1.048          ?  {'success': 2}
+Total:                                             66                                                                      
+-----------------------------------------------------------------------------------------------------------------
+update-motd-fsc (2607, TID: 2607)               Count            Min        Average          Max      Stdev  Return values 
+ - close                                           10          0.574          0.942        1.408      0.299  {'success': 11}
+ - newstat                                         10           0.83          1.316         2.71       0.63  {'ENOENT': 6, 'success': 6}
+ - mmap                                             9          1.652          2.442        4.113      0.717  {'success': 10}
+ - read                                             5           0.98        233.958     1102.756    486.343  {'success': 6}
+ - newfstat                                         5           0.87          1.176        1.456      0.244  {'success': 6}
+ - mprotect                                         4          2.233          3.766        4.997      1.364  {'success': 5}
+ - access                                           3          1.322          2.684        3.418      1.181  {'ENOENT': 4} 
+ - brk                                              3          1.057          1.479        1.882      0.413  {'success': 4}
+ - open                                             3          2.813          3.584        4.376      0.782  {'success': 4}
+ - munmap                                           3          2.912          4.088        4.688      1.019  {'success': 4}
+ - dup2                                             1          1.309          1.309        1.309          ?  {'success': 2}
+ - execve                                           1         82.735         82.735       82.735          ?  {'success': 2}
+ - clone                                            1         27.945         27.945       27.945          ?  {'success': 2}
+ - pipe                                             1          3.595          3.595        3.595          ?  {'success': 2}
+ - unknown                                          1          1.115          1.115        1.115          ?  {'success': 2}
+ - write                                            1          5.748          5.748        5.748          ?  {'success': 2}
+ - lseek                                            1          1.191          1.191        1.191          ?  {'success': 2}
+ - wait4                                            1         18.068         18.068       18.068          ?  {'success': 2}
+Total:                                             63                                                                      
+-----------------------------------------------------------------------------------------------------------------
+10-help-text (2573, TID: 2573)                  Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                            11          2.415          3.322        4.663      0.697  {'success': 12}
+ - close                                            8          0.594          1.132         1.63       0.38  {'success': 9}
+ - mprotect                                         8          2.288          4.217        6.262      1.409  {'success': 9}
+ - newfstat                                         6          1.034          1.329        1.775      0.306  {'success': 7}
+ - access                                           5          1.654          3.084         4.31      0.965  {'ENOENT': 6} 
+ - read                                             5          1.251        128.377       635.23     283.34  {'success': 6}
+ - open                                             4           3.26          3.828        4.072      0.381  {'success': 5}
+ - brk                                              3          1.113           1.55        2.013      0.451  {'success': 4}
+ - ioctl                                            2          1.099          1.432        1.765          ?  {'ENOTTY': 3} 
+ - dup2                                             1          1.378          1.378        1.378          ?  {'success': 2}
+ - execve                                           1         78.806         78.806       78.806          ?  {'success': 2}
+ - unknown                                          1          1.208          1.208        1.208          ?  {'success': 2}
+ - munmap                                           1          4.971          4.971        4.971          ?  {'success': 2}
+Total:                                             56                                                                      
+-----------------------------------------------------------------------------------------------------------------
+50-landscape-sy (2578, TID: 2578)               Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                            13          2.325          3.027        4.437      0.625  {'success': 14}
+ - mprotect                                         8          2.107           4.06        6.626      1.419  {'success': 9}
+ - access                                           5          1.731          3.062        4.233      1.033  {'ENOENT': 6} 
+ - read                                             5          0.806        234.597     1166.548    520.977  {'success': 6}
+ - newfstat                                         5          0.989           1.31        1.751      0.378  {'success': 6}
+ - close                                            5          0.738          1.226        1.523      0.376  {'success': 6}
+ - open                                             4          3.536          4.078         4.41      0.403  {'success': 5}
+ - brk                                              3          0.986          1.554        1.937      0.502  {'success': 4}
+ - ioctl                                            3          0.939          1.356        1.675      0.378  {'ENOTTY': 4} 
+ - dup2                                             1          1.885          1.885        1.885          ?  {'success': 2}
+ - execve                                           1         90.549         90.549       90.549          ?  {'success': 2}
+ - unknown                                          1           1.29           1.29         1.29          ?  {'success': 2}
+ - write                                            1          11.81          11.81        11.81          ?  {'success': 2}
+ - munmap                                           1          4.774          4.774        4.774          ?  {'success': 2}
+Total:                                             56                                                                      
+-----------------------------------------------------------------------------------------------------------------
+dbus-daemon (350, TID: 350)                     Count            Min        Average          Max      Stdev  Return values 
+ - epoll_wait                                      12          2.075      36074.762   430715.013 124280.087  {'success': 13}
+ - epoll_ctl                                       11          1.717          2.304        5.029      0.985  {'success': 12}
+ - recvmsg                                          8          1.613          2.917        5.374      1.295  {'success': 6, 'EAGAIN': 4}
+ - read                                             5          2.114          5.447       17.049      6.498  {'EAGAIN': 2, 'success': 5}
+ - sendmsg                                          4           2.68          5.686       10.015      3.219  {'success': 5}
+ - sendto                                           2          2.612          2.808        3.003          ?  {'success': 3}
+ - close                                            2          1.151          1.461        1.771          ?  {'success': 3}
+ - fcntl                                            2          1.458          1.776        2.094          ?  {'success': 3}
+ - open                                             2          9.526          9.683         9.84          ?  {'ENOENT': 2, 'success': 2}
+ - getsockopt                                       2          2.317          4.162        6.006          ?  {'success': 3}
+ - access                                           1         10.411         10.411       10.411          ?  {'success': 2}
+ - accept4                                          1          7.861          7.861        7.861          ?  {'success': 2}
+ - geteuid                                          1           1.46           1.46         1.46          ?  {'success': 2}
+ - getsockname                                      1          2.329          2.329        2.329          ?  {'success': 2}
+Total:                                             54                                                                      
+-----------------------------------------------------------------------------------------------------------------
+landscape-sysin (2582, TID: 2582)               Count            Min        Average          Max      Stdev  Return values 
+ - rt_sigaction                                     7          0.778          1.021        2.049      0.462  {'success': 8}
+ - mmap                                             7           1.79          2.746        4.296      1.026  {'success': 8}
+ - close                                            7          0.615          0.871         1.49      0.341  {'success': 8}
+ - mprotect                                         4          2.695          4.245        6.708      1.888  {'success': 5}
+ - access                                           3          1.256          2.434        3.385      1.083  {'ENOENT': 4} 
+ - dup2                                             3          1.048          1.478        2.027        0.5  {'success': 4}
+ - brk                                              3          0.788          1.284         1.61      0.436  {'success': 4}
+ - open                                             3          3.418          4.374        5.403      0.994  {'success': 4}
+ - newstat                                          2          1.036          1.786        2.537          ?  {'success': 3}
+ - fcntl                                            2          0.818          1.147        1.475          ?  {'success': 3}
+ - newfstat                                         2          0.999          1.181        1.363          ?  {'success': 3}
+ - execve                                           1        202.001        202.001      202.001          ?  {'success': 2}
+ - geteuid                                          1          1.465          1.465        1.465          ?  {'success': 2}
+ - wait4                                            1       1239.316       1239.316     1239.316          ?  {'success': 2}
+ - unknown                                          1          1.679          1.679        1.679          ?  {'success': 2}
+ - read                                             1          1.825          1.825        1.825          ?  {'success': 2}
+ - getppid                                          1          1.313          1.313        1.313          ?  {'success': 2}
+ - munmap                                           1          4.475          4.475        4.475          ?  {'success': 2}
+ - set_robust_list                                  1          1.862          1.862        1.862          ?  {'success': 2}
+ - getpid                                           1          1.422          1.422        1.422          ?  {'success': 2}
+ - clone                                            1         32.216         32.216       32.216          ?  {'success': 2}
+Total:                                             53                                                                      
+-----------------------------------------------------------------------------------------------------------------
+release-upgrade (2601, TID: 2601)               Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                             9          1.775          2.604          4.5      0.803  {'success': 10}
+ - close                                            8          0.472          0.867        1.203      0.242  {'success': 9}
+ - newstat                                          7          1.169          1.845        3.563      0.816  {'ENOENT': 6, 'success': 3}
+ - newfstat                                         5           0.72          1.115        1.415       0.31  {'success': 6}
+ - mprotect                                         4          1.988          3.728        5.138       1.43  {'success': 5}
+ - access                                           3          1.527           2.89        3.805      1.203  {'ENOENT': 4} 
+ - brk                                              3           1.05          1.508        1.971      0.461  {'success': 4}
+ - read                                             3           0.92            2.0        3.642      1.445  {'success': 4}
+ - open                                             3          2.935          3.834        4.889      0.986  {'success': 4}
+ - munmap                                           3          3.205           4.45        5.132       1.08  {'success': 4}
+ - dup2                                             1          2.346          2.346        2.346          ?  {'success': 2}
+ - execve                                           1         87.262         87.262       87.262          ?  {'success': 2}
+ - unknown                                          1          1.022          1.022        1.022          ?  {'success': 2}
+ - write                                            1         15.555         15.555       15.555          ?  {'success': 2}
+ - lseek                                            1          1.115          1.115        1.115          ?  {'success': 2}
+Total:                                             53                                                                      
+-----------------------------------------------------------------------------------------------------------------
+update-motd-fsc (2609, TID: 2609)               Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                             9          1.404          2.501        4.262        0.8  {'success': 10}
+ - close                                            8          0.469          0.843        1.322      0.255  {'success': 9}
+ - newstat                                          7          0.896          1.521        2.957      0.781  {'ENOENT': 6, 'success': 3}
+ - newfstat                                         5          0.698          1.097        1.597       0.39  {'success': 6}
+ - mprotect                                         4          2.171          3.859        5.612      1.563  {'success': 5}
+ - access                                           3           1.29          2.627        3.332      1.159  {'ENOENT': 4} 
+ - brk                                              3          1.292          6.296       14.965      7.537  {'success': 4}
+ - read                                             3          0.975          1.875        3.219      1.186  {'success': 4}
+ - open                                             3          2.909          3.838        5.045      1.095  {'success': 4}
+ - munmap                                           3           3.21          4.349         4.94      0.987  {'success': 4}
+ - dup2                                             1          1.381          1.381        1.381          ?  {'success': 2}
+ - execve                                           1         84.072         84.072       84.072          ?  {'success': 2}
+ - unknown                                          1          1.147          1.147        1.147          ?  {'success': 2}
+ - write                                            1         16.592         16.592       16.592          ?  {'success': 2}
+ - lseek                                            1          1.182          1.182        1.182          ?  {'success': 2}
+Total:                                             53                                                                      
+-----------------------------------------------------------------------------------------------------------------
+50-landscape-sy (2579, TID: 2579)               Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                             9          1.384          2.755        5.065      1.015  {'success': 10}
+ - close                                            7          0.703          1.068        1.609      0.301  {'success': 8}
+ - mprotect                                         4          2.418          4.309        5.706      1.599  {'success': 5}
+ - newfstat                                         4          0.845          1.246         1.51      0.291  {'success': 5}
+ - newstat                                          4          1.473          2.407        3.665      0.969  {'ENOENT': 4, 'success': 2}
+ - access                                           3          1.436          2.954        3.761      1.316  {'ENOENT': 4} 
+ - brk                                              3          1.115          1.712        2.483      0.701  {'success': 4}
+ - read                                             3          0.975          3.133        6.728      3.134  {'success': 4}
+ - open                                             3          3.172          5.526        9.465      3.433  {'success': 4}
+ - munmap                                           3           2.65          4.602        6.265      1.825  {'success': 4}
+ - fadvise64                                        1          2.198          2.198        2.198          ?  {'success': 2}
+ - dup2                                             1          1.301          1.301        1.301          ?  {'success': 2}
+ - execve                                           1          87.62          87.62        87.62          ?  {'success': 2}
+ - unknown                                          1          1.279          1.279        1.279          ?  {'success': 2}
+ - write                                            1         20.338         20.338       20.338          ?  {'success': 2}
+ - lseek                                            1           1.45           1.45         1.45          ?  {'success': 2}
+Total:                                             49                                                                      
+-----------------------------------------------------------------------------------------------------------------
+00-header (2569, TID: 2569)                     Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                             8          2.226          3.507        5.542      0.976  {'success': 9}
+ - close                                            7          0.573          1.111         1.72      0.382  {'success': 8}
+ - newstat                                          6          1.056          1.865         4.15      1.234  {'ENOENT': 6, 'success': 2}
+ - mprotect                                         4           3.81       1215.173     4843.317   2418.763  {'success': 5}
+ - access                                           3           1.57          3.589        4.928      1.779  {'ENOENT': 4} 
+ - brk                                              3          1.223          1.617         2.22       0.53  {'success': 4}
+ - newfstat                                         3          1.087          1.483         1.71      0.344  {'success': 4}
+ - open                                             2          3.517          4.274         5.03          ?  {'success': 3}
+ - munmap                                           2          5.725          6.191        6.657          ?  {'success': 3}
+ - dup2                                             1            1.5            1.5          1.5          ?  {'success': 2}
+ - execve                                           1         83.436         83.436       83.436          ?  {'success': 2}
+ - newuname                                         1          2.284          2.284        2.284          ?  {'success': 2}
+ - unknown                                          1          1.308          1.308        1.308          ?  {'success': 2}
+ - write                                            1         17.672         17.672       17.672          ?  {'success': 2}
+ - read                                             1           1.71           1.71         1.71          ?  {'success': 2}
+Total:                                             44                                                                      
+-----------------------------------------------------------------------------------------------------------------
+00-header (2570, TID: 2570)                     Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                             8           1.98          2.982        5.276      1.052  {'success': 9}
+ - close                                            7          0.678          1.015        1.641      0.337  {'success': 8}
+ - newstat                                          6          1.025           1.69        3.712      1.086  {'ENOENT': 6, 'success': 2}
+ - mprotect                                         4          2.095          4.305        6.476      1.885  {'success': 5}
+ - access                                           3          1.536          2.986        3.938      1.276  {'ENOENT': 4} 
+ - brk                                              3          1.159          1.687        1.961      0.458  {'success': 4}
+ - newfstat                                         3          1.013          1.417        1.647      0.351  {'success': 4}
+ - open                                             2          3.218          3.615        4.013          ?  {'success': 3}
+ - munmap                                           2          4.775          4.838          4.9          ?  {'success': 3}
+ - dup2                                             1          1.575          1.575        1.575          ?  {'success': 2}
+ - execve                                           1         77.922         77.922       77.922          ?  {'success': 2}
+ - newuname                                         1          1.285          1.285        1.285          ?  {'success': 2}
+ - unknown                                          1          1.269          1.269        1.269          ?  {'success': 2}
+ - write                                            1         17.605         17.605       17.605          ?  {'success': 2}
+ - read                                             1           1.59           1.59         1.59          ?  {'success': 2}
+Total:                                             44                                                                      
+-----------------------------------------------------------------------------------------------------------------
+00-header (2568, TID: 2568)                     Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                             8          2.238           4.18         8.87      2.207  {'success': 9}
+ - close                                            7          0.575            1.3         2.24      0.594  {'success': 8}
+ - newstat                                          6          1.233          2.098        4.392      1.293  {'ENOENT': 6, 'success': 2}
+ - mprotect                                         4           2.34          4.613        6.545      2.016  {'success': 5}
+ - access                                           3          1.465          3.781        5.408       2.06  {'ENOENT': 4} 
+ - brk                                              3          1.305          1.793        2.335      0.517  {'success': 4}
+ - newfstat                                         3          1.028          1.663         2.17      0.582  {'success': 4}
+ - open                                             2          3.684          4.216        4.749          ?  {'success': 3}
+ - munmap                                           2           5.47          5.677        5.884          ?  {'success': 3}
+ - dup2                                             1           1.58           1.58         1.58          ?  {'success': 2}
+ - execve                                           1         86.575         86.575       86.575          ?  {'success': 2}
+ - unknown                                          1          1.309          1.309        1.309          ?  {'success': 2}
+ - write                                            1         17.296         17.296       17.296          ?  {'success': 2}
+ - read                                             1          1.717          1.717        1.717          ?  {'success': 2}
+Total:                                             43                                                                      
+-----------------------------------------------------------------------------------------------------------------
+50-landscape-sy (2580, TID: 2580)               Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                             9          1.711          2.859        4.965      0.924  {'success': 10}
+ - close                                            6          0.812          1.092        1.463      0.279  {'success': 7}
+ - newfstat                                         5          0.831          1.338        1.782      0.409  {'success': 6}
+ - mprotect                                         4          2.278           3.99        5.381      1.462  {'success': 5}
+ - access                                           3          1.485          3.234        4.218      1.519  {'ENOENT': 4} 
+ - brk                                              3          1.233          1.761        2.299      0.533  {'success': 4}
+ - read                                             3          1.173          2.315        4.042      1.522  {'success': 4}
+ - munmap                                           3           2.74          4.443        5.812      1.563  {'success': 4}
+ - open                                             3          3.327          4.349        5.474      1.077  {'success': 4}
+ - unknown                                          1          1.277          1.277        1.277          ?  {'success': 2}
+ - execve                                           1         102.27         102.27       102.27          ?  {'success': 2}
+ - write                                            1           3.47           3.47         3.47          ?  {'success': 2}
+ - lseek                                            1          1.345          1.345        1.345          ?  {'success': 2}
+Total:                                             43                                                                      
+-----------------------------------------------------------------------------------------------------------------
+91-release-upgr (2600, TID: 2600)               Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                             9           1.86          6.607       20.682      7.992  {'success': 10}
+ - close                                            6          0.571          0.863         1.55      0.356  {'success': 7}
+ - newfstat                                         4          0.755          1.353        1.705      0.413  {'success': 5}
+ - mprotect                                         4           1.94          3.606         4.92       1.42  {'success': 5}
+ - access                                           3          1.328          2.574        3.253      1.081  {'ENOENT': 4} 
+ - brk                                              3          1.145          1.523        2.215        0.6  {'success': 4}
+ - read                                             3           1.42      16017.845    42726.714  23283.233  {'success': 4}
+ - munmap                                           3          2.587          4.066        4.982      1.293  {'success': 4}
+ - open                                             2          2.763          3.147        3.532          ?  {'success': 3}
+ - fadvise64                                        1           1.45           1.45         1.45          ?  {'ESPIPE': 2} 
+ - dup2                                             1          1.454          1.454        1.454          ?  {'success': 2}
+ - execve                                           1         83.858         83.858       83.858          ?  {'success': 2}
+ - unknown                                          1          1.096          1.096        1.096          ?  {'success': 2}
+ - write                                            1          5.974          5.974        5.974          ?  {'success': 2}
+ - lseek                                            1           1.28           1.28         1.28          ?  {'ESPIPE': 2} 
+Total:                                             43                                                                      
+-----------------------------------------------------------------------------------------------------------------
+ssh (2562, TID: 2562)                           Count            Min        Average          Max      Stdev  Return values 
+ - select                                          10          1.733      47000.949   313536.074 105616.597  {'success': 11}
+ - read                                             6          0.943          8.113       25.963       9.17  {'success': 7}
+ - fcntl                                            6          1.386          1.783         3.15      0.696  {'success': 7}
+ - write                                            5           3.28         22.444       45.173     15.448  {'success': 6}
+ - close                                            4          0.935          2.037         2.86      0.805  {'success': 5}
+ - ioctl                                            3           1.54          2.116          2.5      0.508  {'ENOTTY': 4} 
+ - setsockopt                                       2          2.312          2.389        2.465          ?  {'success': 3}
+ - rt_sigaction                                     2          1.933          2.724        3.514          ?  {'success': 3}
+ - getsockname                                      1          2.189          2.189        2.189          ?  {'success': 2}
+ - getsockopt                                       1           3.15           3.15         3.15          ?  {'success': 2}
+ - shutdown                                         1         18.183         18.183       18.183          ?  {'success': 2}
+Total:                                             41                                                                      
+-----------------------------------------------------------------------------------------------------------------
+release-upgrade (2603, TID: 2603)               Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                             8          1.556           2.63        4.572      0.899  {'success': 9}
+ - close                                            7          0.575          0.956        1.625      0.365  {'success': 8}
+ - mprotect                                         4          1.952          3.534        5.091       1.46  {'success': 5}
+ - newstat                                          4          1.032          2.021        3.512       1.14  {'ENOENT': 4, 'success': 2}
+ - access                                           3          1.898          2.846        3.584      0.862  {'ENOENT': 4} 
+ - brk                                              3          1.208           1.46         1.84      0.335  {'success': 4}
+ - newfstat                                         3          1.028          1.356         1.71      0.342  {'success': 4}
+ - open                                             2          3.518          3.647        3.777          ?  {'success': 3}
+ - munmap                                           2          4.092          4.435        4.778          ?  {'success': 3}
+ - dup2                                             1           1.06           1.06         1.06          ?  {'success': 2}
+ - execve                                           1         69.442         69.442       69.442          ?  {'success': 2}
+ - unknown                                          1          1.087          1.087        1.087          ?  {'success': 2}
+ - write                                            1         15.439         15.439       15.439          ?  {'success': 2}
+ - read                                             1          1.475          1.475        1.475          ?  {'success': 2}
+Total:                                             41                                                                      
+-----------------------------------------------------------------------------------------------------------------
+10-help-text (2572, TID: 2572)                  Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                             8          1.975          2.959         4.84      0.849  {'success': 9}
+ - close                                            7          0.635          1.085         1.75      0.434  {'success': 8}
+ - mprotect                                         4          2.082           4.02         5.66      1.743  {'success': 5}
+ - access                                           3          1.468           3.07        3.979      1.392  {'ENOENT': 4} 
+ - brk                                              3          1.102          1.474        1.782      0.344  {'success': 4}
+ - newfstat                                         3          0.818          1.296        1.629      0.424  {'success': 4}
+ - open                                             2          3.375          3.757         4.14          ?  {'success': 3}
+ - munmap                                           2           4.81          4.913        5.016          ?  {'success': 3}
+ - dup2                                             1          1.453          1.453        1.453          ?  {'success': 2}
+ - execve                                           1         87.571         87.571       87.571          ?  {'success': 2}
+ - newuname                                         1          1.335          1.335        1.335          ?  {'success': 2}
+ - unknown                                          1          1.184          1.184        1.184          ?  {'success': 2}
+ - write                                            1          7.425          7.425        7.425          ?  {'success': 2}
+ - read                                             1          1.592          1.592        1.592          ?  {'success': 2}
+Total:                                             38                                                                      
+-----------------------------------------------------------------------------------------------------------------
+update-motd-upd (2596, TID: 2596)               Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                             7           2.12          2.826          4.5      0.796  {'success': 8}
+ - close                                            6          0.513          1.077        1.848      0.467  {'success': 7}
+ - newfstat                                         4          0.983           1.31        1.928      0.442  {'success': 5}
+ - mprotect                                         4          1.963          3.681        5.324      1.528  {'success': 5}
+ - access                                           3          1.702          2.996         3.65      1.121  {'ENOENT': 4} 
+ - brk                                              3          1.279          1.593        2.047      0.403  {'success': 4}
+ - read                                             3          0.828          1.813        3.055      1.135  {'success': 4}
+ - open                                             3          2.961          3.939          5.0      1.022  {'success': 4}
+ - unknown                                          1          1.113          1.113        1.113          ?  {'success': 2}
+ - execve                                           1         88.737         88.737       88.737          ?  {'success': 2}
+ - fadvise64                                        1            2.0            2.0          2.0          ?  {'success': 2}
+ - write                                            1          3.157          3.157        3.157          ?  {'success': 2}
+ - munmap                                           1          4.497          4.497        4.497          ?  {'success': 2}
+Total:                                             38                                                                      
+-----------------------------------------------------------------------------------------------------------------
+release-upgrade (2604, TID: 2604)               Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                             7           1.67          2.492        3.935      0.698  {'success': 8}
+ - close                                            6          0.645          0.946         1.26      0.234  {'success': 7}
+ - newfstat                                         4           0.71          1.177        1.807      0.503  {'success': 5}
+ - mprotect                                         4          1.876          3.508        4.924      1.385  {'success': 5}
+ - access                                           3           1.48          2.811        3.709      1.176  {'ENOENT': 4} 
+ - brk                                              3          1.047          1.382        1.768      0.363  {'success': 4}
+ - read                                             3          0.847          1.879        3.295      1.268  {'success': 4}
+ - open                                             3          3.434          4.078        4.982      0.806  {'success': 4}
+ - unknown                                          1          1.009          1.009        1.009          ?  {'success': 2}
+ - execve                                           1         82.788         82.788       82.788          ?  {'success': 2}
+ - fadvise64                                        1           2.18           2.18         2.18          ?  {'success': 2}
+ - write                                            1          4.723          4.723        4.723          ?  {'success': 2}
+ - munmap                                           1          4.655          4.655        4.655          ?  {'success': 2}
+Total:                                             38                                                                      
+-----------------------------------------------------------------------------------------------------------------
+update-motd-fsc (2610, TID: 2610)               Count            Min        Average          Max      Stdev  Return values 
+ - mmap                                             7          1.712          5.136       21.931      7.413  {'success': 8}
+ - close                                            6          0.672          1.016        1.493      0.336  {'success': 7}
+ - newfstat                                         4          0.747          1.216        1.797      0.483  {'success': 5}
+ - mprotect                                         4          1.931          3.567        4.937      1.416  {'success': 5}
+ - access                                           3          1.374          2.736        3.547      1.186  {'ENOENT': 4} 
+ - brk                                              3          1.027          1.467        1.815      0.402  {'success': 4}
+ - open                                             3           2.82          3.512        4.353      0.777  {'success': 4}
+ - read                                             2          1.505          1.512        1.518          ?  {'success': 3}
+ - unknown                                          1          0.995          0.995        0.995          ?  {'success': 2}
+ - execve                                           1         67.882         67.882       67.882          ?  {'success': 2}
+ - fadvise64                                        1          1.352          1.352        1.352          ?  {'success': 2}
+ - munmap                                           1          4.473          4.473        4.473          ?  {'success': 2}
+Total:                                             36                                                                      
+-----------------------------------------------------------------------------------------------------------------
+ssh (2561, TID: 2561)                           Count            Min        Average          Max      Stdev  Return values 
+ - select                                           8          1.935      61067.081   392475.576 138015.921  {'success': 9}
+ - write                                            5          2.337         18.485       27.722     10.374  {'success': 6}
+ - read                                             4          0.925          7.556       24.823     11.528  {'success': 5}
+ - close                                            4          0.768          1.496        1.808      0.488  {'success': 5}
+ - fcntl                                            4          1.251           1.64        2.392      0.523  {'success': 5}
+ - ioctl                                            3          1.394          1.807        2.363        0.5  {'ENOTTY': 4} 
+ - setsockopt                                       2          1.977          2.142        2.307          ?  {'success': 3}
+ - rt_sigaction                                     2          1.834            2.1        2.366          ?  {'success': 3}
+ - getsockname                                      1          1.203          1.203        1.203          ?  {'success': 2}
+ - getsockopt                                       1          19.17          19.17        19.17          ?  {'success': 2}
+ - shutdown                                         1         12.778         12.778       12.778          ?  {'success': 2}
+Total:                                             35                                                                      
+-----------------------------------------------------------------------------------------------------------------
+lttng-sessiond (2299, TID: 2396)                Count            Min        Average          Max      Stdev  Return values 
+ - recvmsg                                          8         13.381      11199.995    81514.239  28544.145  {'success': 9}
+ - sendmsg                                          7          2.358       1107.048     7716.023   2914.286  {'success': 8}
+ - close                                            4          0.858          1.572        2.297        0.6  {'success': 5}
+ - fcntl                                            4           0.81          1.111        1.525        0.3  {'success': 5}
+ - accept                                           2          2.202          4.282        6.362          ?  {'success': 3}
+ - setsockopt                                       2           1.11          1.721        2.332          ?  {'success': 3}
+ - epoll_wait                                       2          21.26    2744828.002  5489634.745          ?  {'success': 3}
+ - ioctl                                            2          3.369        161.782      320.196          ?  {'success': 3}
+ - newstat                                          1          3.003          3.003        3.003          ?  {'success': 2}
+Total:                                             32                                                                      
+-----------------------------------------------------------------------------------------------------------------
+sh (2565, TID: 2565)                            Count            Min        Average          Max      Stdev  Return values 
+ - rt_sigaction                                     7          0.842          1.013         1.46      0.206  {'success': 8}
+ - close                                            3          0.746          0.859        1.015       0.14  {'success': 4}
+ - mprotect                                         3          2.894           4.48        7.435      2.562  {'success': 4}
+ - dup2                                             2           1.38          1.545         1.71          ?  {'success': 3}
+ - brk                                              2          1.495          1.891        2.287          ?  {'success': 3}
+ - fcntl                                            2          1.029          1.289        1.549          ?  {'success': 3}
+ - open                                             1         10.865         10.865       10.865          ?  {'success': 2}
+ - getcwd                                           1           1.82           1.82         1.82          ?  {'success': 2}
+ - geteuid                                          1          1.275          1.275        1.275          ?  {'success': 2}
+ - wait4                                            1     329409.715     329409.715   329409.715          ?  {'success': 2}
+ - getppid                                          1          0.963          0.963        0.963          ?  {'success': 2}
+ - munmap                                           1          6.348          6.348        6.348          ?  {'success': 2}
+ - getpid                                           1          1.484          1.484        1.484          ?  {'success': 2}
+ - clone                                            1         36.897         36.897       36.897          ?  {'success': 2}
+Total:                                             27                                                                      
+-----------------------------------------------------------------------------------------------------------------
+rs:main Q:Reg (414, TID: 417)                   Count            Min        Average          Max      Stdev  Return values 
+ - futex                                           16          1.514      31279.675   498669.446 124637.768  {'success': 17}
+ - write                                           10          5.534          13.39       41.435     12.213  {'success': 11}
+Total:                                             26                                                                      
+-----------------------------------------------------------------------------------------------------------------
+91-release-upgr (2598, TID: 2598)               Count            Min        Average          Max      Stdev  Return values 
+ - newstat                                          8           1.17           1.93        3.232        0.8  {'ENOENT': 7, 'success': 3}
+ - close                                            6          0.502          0.874        1.335      0.331  {'success': 6, 'EBADF': 2}
+ - clone                                            2         25.464         34.989       44.513          ?  {'success': 3}
+ - wait4                                            2         15.479       24374.32    48733.161          ?  {'success': 3}
+ - dup2                                             1          1.277          1.277        1.277          ?  {'success': 2}
+ - pipe                                             1          2.971          2.971        2.971          ?  {'success': 2}
+Total:                                             20                                                                      
+-----------------------------------------------------------------------------------------------------------------
+init (1, TID: 1)                                Count            Min        Average          Max      Stdev  Return values 
+ - read                                             6          1.224          2.502        4.687        1.4  {'success': 4, 'EAGAIN': 4}
+ - waitid                                           6          2.514         15.667       45.477     17.598  {'success': 7}
+ - write                                            3          4.771          5.575         7.14      1.355  {'success': 4}
+ - select                                           3        5550.66     159630.304   455124.529 255983.845  {'-514': 4}   
+Total:                                             18                                                                      
+-----------------------------------------------------------------------------------------------------------------
+50-landscape-sy (2576, TID: 2576)               Count            Min        Average          Max      Stdev  Return values 
+ - close                                            6          0.638          1.017        1.484      0.386  {'success': 6, 'EBADF': 2}
+ - newstat                                          4          1.345          2.378        4.186       1.35  {'ENOENT': 4, 'success': 2}
+ - clone                                            2         28.849         29.645       30.442          ?  {'success': 3}
+ - wait4                                            2        703.624        1330.92     1958.217          ?  {'success': 3}
+ - dup2                                             1          1.486          1.486        1.486          ?  {'success': 2}
+ - pipe                                             1          3.913          3.913        3.913          ?  {'success': 2}
+Total:                                             16                                                                      
+-----------------------------------------------------------------------------------------------------------------
+50-landscape-sy (2577, TID: 2577)               Count            Min        Average          Max      Stdev  Return values 
+ - close                                            4          0.672          1.181        1.745      0.586  {'success': 5}
+ - read                                             2         11.375        325.685      639.995          ?  {'success': 3}
+ - write                                            1          5.308          5.308        5.308          ?  {'success': 2}
+ - dup2                                             1          1.153          1.153        1.153          ?  {'success': 2}
+ - clone                                            1         43.533         43.533       43.533          ?  {'success': 2}
+ - pipe                                             1          6.103          6.103        6.103          ?  {'success': 2}
+ - wait4                                            1        262.385        262.385      262.385          ?  {'success': 2}
+Total:                                             11                                                                      
+-----------------------------------------------------------------------------------------------------------------
+apache2 (?, TID: 1107)                          Count            Min        Average          Max      Stdev  Return values 
+ - wait4                                            5          4.417          5.377        8.094      1.576  {'success': 6}
+ - select                                           5    1000707.979    1000820.798   1001109.44    165.771  {'success': 6}
+Total:                                             10                                                                      
+-----------------------------------------------------------------------------------------------------------------
+in:imklog (414, TID: 416)                       Count            Min        Average          Max      Stdev  Return values 
+ - futex                                            8         10.381         35.723      110.124     33.353  {'success': 9}
+ - read                                             1    5583735.401    5583735.401  5583735.401          ?  {'success': 2}
+Total:                                              9                                                                      
+-----------------------------------------------------------------------------------------------------------------
+in:imuxsock (414, TID: 415)                     Count            Min        Average          Max      Stdev  Return values 
+ - futex                                            2          4.746          5.098        5.451          ?  {'success': 3}
+ - recvmsg                                          2          5.012          6.189        7.366          ?  {'success': 3}
+ - select                                           2        319.513     250339.715   500359.916          ?  {'success': 3}
+Total:                                              6                                                                      
+-----------------------------------------------------------------------------------------------------------------
+sshd (952, TID: 952)                            Count            Min        Average          Max      Stdev  Return values 
+ - wait4                                            2          1.314         13.921       26.528          ?  {'success': 3}
+ - rt_sigaction                                     1           2.07           2.07         2.07          ?  {'success': 2}
+ - select                                           1     506640.682     506640.682   506640.682          ?  {'-514': 2}   
+Total:                                              4                                                                      
+-----------------------------------------------------------------------------------------------------------------
+apache2 (2614, TID: 2614)                       Count            Min        Average          Max      Stdev  Return values 
+ - set_robust_list                                  1           3.54           3.54         3.54          ?  {'success': 2}
+ - clone                                            1        695.645        695.645      695.645          ?  {'success': 2}
+Total:                                              2                                                                      
+-----------------------------------------------------------------------------------------------------------------
+lttng-consumerd (?, TID: 2502)                  Count            Min        Average          Max      Stdev  Return values 
+ - poll                                             1      10133.362      10133.362    10133.362          ?  {'success': 2}
+ - futex                                            1    5577299.203    5577299.203  5577299.203          ?  {'success': 2}
+Total:                                              2                                                                      
+-----------------------------------------------------------------------------------------------------------------
+landscape-sysin (2584, TID: 2584)               Count            Min        Average          Max      Stdev  Return values 
+ - set_robust_list                                  1           1.41           1.41         1.41          ?  {'success': 2}
+Total:                                              1                                                                      
+-----------------------------------------------------------------------------------------------------------------
+apache2 (2615, TID: 2615)                       Count            Min        Average          Max      Stdev  Return values 
+ - set_robust_list                                  1          1.866          1.866        1.866          ?  {'success': 2}
+Total:                                              1                                                                      
+-----------------------------------------------------------------------------------------------------------------
+
+Total syscalls: 27077
